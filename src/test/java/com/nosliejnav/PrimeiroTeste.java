@@ -1,13 +1,14 @@
 package com.nosliejnav;
 
+import org.assertj.core.api.Assertions;
 
-import org.junit.Assert;
+
 import org.junit.Test;
 
 public class PrimeiroTeste {
 
     @Test
-    public void estruturaDeUmTeste(){
+    public void deveSomar2Numeros(){
         // cenário
         int numero1 = 10, numero2 = 5;
 
@@ -15,7 +16,9 @@ public class PrimeiroTeste {
         int resultado = numero1 + numero2;
 
         //verificações
-        Assert.assertEquals(10, resultado);
+        Assertions.assertThat(resultado).isEqualTo(15);
+
 
     }
 }
+
