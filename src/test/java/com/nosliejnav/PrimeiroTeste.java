@@ -18,7 +18,6 @@ public class PrimeiroTeste {
         //verificações
         Assertions.assertThat(resultado).isEqualTo(15);
 
-
     }
 }
 
