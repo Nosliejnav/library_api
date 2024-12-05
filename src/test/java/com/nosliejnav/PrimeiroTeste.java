@@ -1,7 +1,8 @@
 package com.nosliejnav;
 
+import org.assertj.core.api.Assertions;
 
-import org.junit.Assert;
+
 import org.junit.Test;
 
 public class PrimeiroTeste {
@@ -15,7 +16,8 @@ public class PrimeiroTeste {
         int resultado = numero1 + numero2;
 
         //verificações
-        Assert.assertEquals(10, resultado);
+        Assertions.assertThat(resultado).isGreaterThan(10);
+
 
     }
 }
