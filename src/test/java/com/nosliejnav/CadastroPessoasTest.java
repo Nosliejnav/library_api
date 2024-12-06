@@ -16,14 +16,15 @@ public class CadastroPessoasTest {
         //verificação
         Assertions.assertThat(cadastro.getPessoas()).isEmpty();
     }
-/*
-deveAdiciconarUmaPessoa
- */
+    /*
+    deveAdiciconarUmaPessoa
+     */
     @Test
     public void deveAdiciconarUmaPessoa(){
         //Cenário
         CadastroPessoas cadastroPessoas = new CadastroPessoas();
         Pessoa pessoa = new Pessoa();
+        pessoa.setNome("Wilson");
 
         //execução
         cadastroPessoas.adicionar(pessoa);
@@ -35,6 +36,16 @@ deveAdiciconarUmaPessoa
                 .contains(pessoa);
     }
     /*
-
+    naoDeveAdicionarPessoasComNomeVazio
      */
+    @Test(expected = PessoasSemNotException.class)
+    public void naoDeveAdicionarPessoasComNomeVazio(){
+    //cenário
+    CadastroPessoas cadastroPessoas = new CadastroPessoas();
+    Pessoa pessoa = new Pessoa();
+
+    //execução
+    cadastroPessoas.adicionar(pessoa);
+
+    }
 }

@@ -17,10 +17,17 @@ public class CadastroPessoas {
     public List<Pessoa> getPessoas() {
         return this.pessoas;
     }
-/*
-deveAdiciconarUmaPessoa
- */
+    /*
+    deveAdiciconarUmaPessoa
+     */
     public void adicionar(Pessoa pessoa) {
+        if(pessoa.getNome() == null){
+            throw new PessoasSemNotException();
+        }
         this.pessoas.add(pessoa);
     }
+    /*
+
+     */
+
 }
