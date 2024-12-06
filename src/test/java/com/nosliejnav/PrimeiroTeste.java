@@ -85,6 +85,9 @@ class Calculadora {
     }
 
     int dividir(int num, int num2){
+        if(num < 0 || num2 < 0){
+            throw new RuntimeException("Não é permitido dividir numeros negativos.");
+        }
         return num / num2;
     }
 
