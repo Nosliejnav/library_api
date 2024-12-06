@@ -16,6 +16,7 @@ public class CadastroPessoasTest {
         //verificação
         Assertions.assertThat(cadastro.getPessoas()).isEmpty();
     }
+
     /*
     deveAdiciconarUmaPessoa
      */
@@ -35,35 +36,50 @@ public class CadastroPessoasTest {
                 .hasSize(1)
                 .contains(pessoa);
     }
+
     /*
     naoDeveAdicionarPessoasComNomeVazio
      */
     @Test(expected = PessoasSemNotException.class)
-    public void naoDeveAdicionarPessoasComNomeVazio(){
-    //cenário
-    CadastroPessoas cadastroPessoas = new CadastroPessoas();
-    Pessoa pessoa = new Pessoa();
+        public void naoDeveAdicionarPessoasComNomeVazio(){
+        //cenário
+        CadastroPessoas cadastroPessoas = new CadastroPessoas();
+        Pessoa pessoa = new Pessoa();
 
-    //execução
-    cadastroPessoas.adicionar(pessoa);
-
+        //execução
+        cadastroPessoas.adicionar(pessoa);
     }
+
     /*
     deveRemoverUmaPessoa
      */
     @Test
     public void deveRemoverUmaPessoa(){
-    //cenário
-    CadastroPessoas cadastroPessoas = new CadastroPessoas();
-    Pessoa pessoa = new Pessoa();
-    pessoa.setNome("Wilson");
-    cadastroPessoas.adicionar(pessoa);
+        //cenário
+        CadastroPessoas cadastroPessoas = new CadastroPessoas();
+        Pessoa pessoa = new Pessoa();
+        pessoa.setNome("Wilson");
+        cadastroPessoas.adicionar(pessoa);
 
-    //execução
-    cadastroPessoas.remover(pessoa);
+        //execução
+        cadastroPessoas.remover(pessoa);
 
-    //verificação
-    Assertions.assertThat(cadastroPessoas.getPessoas()).isEmpty();
+        //verificação
+        Assertions.assertThat(cadastroPessoas.getPessoas()).isEmpty();
+    }
 
+    /*
+    deveLancarErroAoTentarRemoverPessoaInexistente
+     */
+    @Test(expected = CadastroVazioException.class)
+    public void deveLancarErroAoTentarRemoverPessoaInexistente(){
+        //cenário
+        CadastroPessoas cadastroPessoas = new CadastroPessoas();
+        Pessoa pessoa = new Pessoa();
+
+        //execução
+        cadastroPessoas.remover(pessoa);
+
+        //verificação
     }
 }

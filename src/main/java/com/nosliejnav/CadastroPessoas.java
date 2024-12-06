@@ -30,6 +30,9 @@ public class CadastroPessoas {
     deveRemoverUmaPessoa
      */
     public void remover(Pessoa pessoa) {
+        if(this.pessoas.isEmpty()){
+                throw new CadastroVazioException()  ;
+        }
         this.pessoas.remove(pessoa);
     }
 }
