@@ -27,6 +27,49 @@ public class PrimeiroTeste {
         //execução
         calculadora.somar(num1, num2);
     }
+
+    // Inicio Desafio calculadora
+
+    @Test
+    public void deveSubtrair2Numeros(){
+        // cenário
+        Calculadora calculadora = new Calculadora();
+        int numero1 = 10, numero2 = 5;
+
+        // execução
+        int resultado = calculadora.subtrair(numero1, numero2);
+
+        //verificações
+        Assertions.assertThat(resultado).isEqualTo(5);
+    }
+
+    @Test
+    public void deveDividir2Numeros(){
+        // cenário
+        Calculadora calculadora = new Calculadora();
+        int numero1 = 10, numero2 = 5;
+
+        // execução
+        int resultado = calculadora.dividir(numero1, numero2);
+
+        //verificações
+        Assertions.assertThat(resultado).isEqualTo(2);
+    }
+
+    @Test
+    public void deveMultiplicar2Numeros(){
+        // cenário
+        Calculadora calculadora = new Calculadora();
+        int numero1 = 10, numero2 = 5;
+
+        // execução
+        int resultado = calculadora.multiplicar(numero1, numero2);
+
+        //verificações
+        Assertions.assertThat(resultado).isEqualTo(50);
+    }
+
+    //Desafio calculadora Fim
 }
 
 class Calculadora {
@@ -35,5 +78,17 @@ class Calculadora {
             throw new RuntimeException("Não é permitido somar numeros negativos.");
         }
         return num + num2;
+    }
+
+    int subtrair(int num, int num2){
+        return num - num2;
+    }
+
+    int dividir(int num, int num2){
+        return num / num2;
+    }
+
+    int multiplicar(int num, int num2){
+        return num * num2;
     }
 }
