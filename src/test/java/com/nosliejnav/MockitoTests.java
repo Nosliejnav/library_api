@@ -19,15 +19,13 @@ public class MockitoTests {
 
     @Test
     public void primeiroTesteMockito(){
-        Mockito.when(lista.size()).thenReturn(2);
 
-        int size = 0;
-        if(1 == 2){
-            size = lista.size();
-            size = lista.size();
-        }
+        lista.size();
+        lista.add("");
 
-//        Assertions.assertThat(size).isEqualTo(2);
-        Mockito.verify(lista, Mockito.never()).size();
+        InOrder inOrder = Mockito.inOrder(lista);
+        inOrder.verify(lista).size();
+        inOrder.verify(lista).add("");
+
     }
 }
