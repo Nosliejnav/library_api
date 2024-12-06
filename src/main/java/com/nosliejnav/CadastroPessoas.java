@@ -27,7 +27,9 @@ public class CadastroPessoas {
         this.pessoas.add(pessoa);
     }
     /*
-
+    deveRemoverUmaPessoa
      */
-
+    public void remover(Pessoa pessoa) {
+        this.pessoas.remove(pessoa);
+    }
 }
