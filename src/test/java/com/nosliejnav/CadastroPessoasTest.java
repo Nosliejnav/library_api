@@ -1,14 +1,13 @@
 package com.nosliejnav;
 
 import org.assertj.core.api.Assertions;
-import org.junit.Test;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 
 public class CadastroPessoasTest {
 
-    /*
-    deveCriarOCadastroDePessoas
-     */
     @Test
+    @DisplayName("Deve criar o Cadastro de pessoas.")
     public void deveCriarOCadastroDePessoas(){
         //cenário e execução
         CadastroPessoas cadastro = new CadastroPessoas();
@@ -17,10 +16,8 @@ public class CadastroPessoasTest {
         Assertions.assertThat(cadastro.getPessoas()).isEmpty();
     }
 
-    /*
-    deveAdiciconarUmaPessoa
-     */
     @Test
+    @DisplayName("Deve Adicionar uma pessoa.")
     public void deveAdiciconarUmaPessoa(){
         //Cenário
         CadastroPessoas cadastroPessoas = new CadastroPessoas();
@@ -37,23 +34,20 @@ public class CadastroPessoasTest {
                 .contains(pessoa);
     }
 
-    /*
-    naoDeveAdicionarPessoasComNomeVazio
-     */
-    @Test(expected = PessoasSemNotException.class)
-        public void naoDeveAdicionarPessoasComNomeVazio(){
+    @Test
+    @DisplayName("Não Deve Adicionar pessoa com nome vazio.")
+    public void naoDeveAdicionarPessoasComNomeVazio(){
         //cenário
         CadastroPessoas cadastroPessoas = new CadastroPessoas();
         Pessoa pessoa = new Pessoa();
 
         //execução
-        cadastroPessoas.adicionar(pessoa);
+        org.junit.jupiter.api.Assertions
+                .assertThrows( PessoasSemNotException.class, () -> cadastroPessoas.adicionar(pessoa));
     }
 
-    /*
-    deveRemoverUmaPessoa
-     */
     @Test
+    @DisplayName("Deve Remover uma pessoa.")
     public void deveRemoverUmaPessoa(){
         //cenário
         CadastroPessoas cadastroPessoas = new CadastroPessoas();
@@ -68,17 +62,16 @@ public class CadastroPessoasTest {
         Assertions.assertThat(cadastroPessoas.getPessoas()).isEmpty();
     }
 
-    /*
-    deveLancarErroAoTentarRemoverPessoaInexistente
-     */
-    @Test(expected = CadastroVazioException.class)
+    @Test
+    @DisplayName("Deve lançar erro ao tentar remover pessoa inexistente.")
     public void deveLancarErroAoTentarRemoverPessoaInexistente(){
         //cenário
         CadastroPessoas cadastroPessoas = new CadastroPessoas();
         Pessoa pessoa = new Pessoa();
 
         //execução
-        cadastroPessoas.remover(pessoa);
+        org.junit.jupiter.api.Assertions
+                .assertThrows(CadastroVazioException.class, () -> cadastroPessoas.remover(pessoa));
 
         //verificação
     }

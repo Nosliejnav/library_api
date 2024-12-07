@@ -1,15 +1,26 @@
 package com.nosliejnav;
 
 import org.assertj.core.api.Assertions;
-import org.junit.Before;
-import org.junit.Test;
 
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.Mock;
+import org.mockito.exceptions.base.MockitoException;
+
+
+//@RunWith(MockitoJUnitRunner.class) trocou para a de baixo
+//@ExtendWith(MockitoException.class)
 public class PrimeiroTeste {
 
+//    @Mock usando com a a novo modelo
+//    Calculadora calculadora;
+
     Calculadora calculadora;
+
     int numero1 = 10, numero2 = 5;
 
-    @Before
+    @BeforeEach
     public void setUp(){
         calculadora = new Calculadora();
     }
@@ -25,13 +36,13 @@ public class PrimeiroTeste {
         Assertions.assertThat(resultado).isEqualTo(15);
     }
 
-    @Test(expected = RuntimeException.class)
+    @Test
     public void naoDeveSomarNumerosNegativos(){
         //cenário
         int num1 = -10, num2 =5;
 
         //execução
-        calculadora.somar(num1, num2);
+        org.junit.jupiter.api.Assertions.assertThrows(RuntimeException.class, () -> calculadora.somar(num1, num2));
     }
 
 //     INICIO Desafio calculadora
@@ -69,13 +80,13 @@ public class PrimeiroTeste {
         Assertions.assertThat(resultado).isEqualTo(2);
     }
 
-    @Test(expected = ArithmeticException.class)
+    @Test
     public void naoDeveDividirPorZero(){
         //cenario
         int numero1 = 10, numero2 = 0;
 
         //execução
-        calculadora.dividir(numero1, numero2);
+        org.junit.jupiter.api.Assertions.assertThrows(ArithmeticException.class, () -> calculadora.dividir(numero1, numero2));
         }
     }
 
