@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c396700c-fba7-48bd-a0d0-54ceaaf6df15" name="Changes" comment="Criando o teste da camada de serviço">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/model/repository/BookRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/service/impl/BookServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/nosliejnav/libraryapi/service/BookServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nosliejnav/libraryapi/service/BookServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nosliejnav/libraryapi/service/BookServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nosliejnav/libraryapi/service/BookServiceTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +62,7 @@
     "Application.com.nosliejnav.libraryapi.LibraryApiApplication.executor": "Run",
     "JUnit.BookControllerTest.createBookTest.executor": "Run",
     "JUnit.BookControllerTest.executor": "Run",
+    "JUnit.BookServiceTest.executor": "Run",
     "JUnit.BookServiceTest.saveBookTest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -72,6 +77,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.nosliejnav.libraryapi.model.repository" />
+      <recent name="com.nosliejnav.libraryapi.service.impl" />
       <recent name="com.nosliejnav.libraryapi.api.dto" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -169,10 +176,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.BookServiceTest" />
-        <item itemvalue="JUnit.BookControllerTest" />
-        <item itemvalue="JUnit.BookControllerTest.createBookTest" />
         <item itemvalue="JUnit.BookServiceTest.saveBookTest" />
+        <item itemvalue="JUnit.BookControllerTest" />
         <item itemvalue="Application.com.nosliejnav.libraryapi.LibraryApiApplication" />
+        <item itemvalue="JUnit.BookControllerTest.createBookTest" />
       </list>
     </recent_temporary>
   </component>
