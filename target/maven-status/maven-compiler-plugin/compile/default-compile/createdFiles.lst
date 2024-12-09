@@ -2,6 +2,9 @@ com\nosliejnav\libraryapi\model\entity\Book$BookBuilder.class
 com\nosliejnav\libraryapi\service\BookService.class
 com\nosliejnav\libraryapi\api\dto\BookDTO.class
 com\nosliejnav\libraryapi\api\resource\BookController.class
+com\nosliejnav\libraryapi\model\repository\BookRepository.class
 com\nosliejnav\libraryapi\LibraryApiApplication.class
 com\nosliejnav\libraryapi\api\dto\BookDTO$BookDTOBuilder.class
+com\nosliejnav\libraryapi\api\exception\ApiErros.class
 com\nosliejnav\libraryapi\model\entity\Book.class
+com\nosliejnav\libraryapi\service\impl\BookServiceImpl.class

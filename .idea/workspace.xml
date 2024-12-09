@@ -4,13 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c396700c-fba7-48bd-a0d0-54ceaaf6df15" name="Changes" comment="Criando o teste da camada de serviço">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/model/repository/BookRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/service/impl/BookServiceImpl.java" afterDir="false" />
+    <list default="true" id="c396700c-fba7-48bd-a0d0-54ceaaf6df15" name="Changes" comment="Criando a implementação do BookService">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/api/exception/ApiErros.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/nosliejnav/libraryapi/service/BookServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nosliejnav/libraryapi/service/BookServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nosliejnav/libraryapi/service/BookServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nosliejnav/libraryapi/service/BookServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/api/dto/BookDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/api/dto/BookDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/api/resource/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/api/resource/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/nosliejnav/libraryapi/api/resource/BookControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nosliejnav/libraryapi/api/resource/BookControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/LibraryApiApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/api/dto/BookDTO$BookDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/api/dto/BookDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/api/resource/BookController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/model/entity/Book$BookBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/model/entity/Book.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/model/repository/BookRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/service/BookService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/service/impl/BookServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/library-api-0.0.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/library-api-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nosliejnav/libraryapi/LibraryApiApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nosliejnav/libraryapi/api/resource/BookControllerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nosliejnav/libraryapi/service/BookServiceTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +67,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -61,15 +85,17 @@
     "Application.PrimeiroProjetoRestApplication.executor": "Run",
     "Application.com.nosliejnav.libraryapi.LibraryApiApplication.executor": "Run",
     "JUnit.BookControllerTest.createBookTest.executor": "Run",
+    "JUnit.BookControllerTest.createInvalidBookTest.executor": "Run",
     "JUnit.BookControllerTest.executor": "Run",
     "JUnit.BookServiceTest.executor": "Run",
     "JUnit.BookServiceTest.saveBookTest.executor": "Run",
+    "Maven.library-api [clean,install].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/DevApps/+/IntelliJ_Project/library_api/src/test/java",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Global Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.pluginManager"
@@ -77,6 +103,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.nosliejnav.libraryapi.api.exception" />
       <recent name="com.nosliejnav.libraryapi.model.repository" />
       <recent name="com.nosliejnav.libraryapi.service.impl" />
       <recent name="com.nosliejnav.libraryapi.api.dto" />
@@ -88,7 +115,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BookServiceTest">
+  <component name="RunManager" selected="JUnit.BookControllerTest.createInvalidBookTest">
     <configuration name="com.nosliejnav.libraryapi.LibraryApiApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.nosliejnav.libraryapi.LibraryApiApplication" />
       <module name="library-api" />
@@ -117,7 +144,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookControllerTest.createBookTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BookControllerTest.createInvalidBookTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="library-api" />
       <extension name="coverage">
         <pattern>
@@ -127,7 +154,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.nosliejnav.libraryapi.api.resource" />
       <option name="MAIN_CLASS_NAME" value="com.nosliejnav.libraryapi.api.resource.BookControllerTest" />
-      <option name="METHOD_NAME" value="createBookTest" />
+      <option name="METHOD_NAME" value="createInvalidBookTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -175,11 +202,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BookControllerTest.createInvalidBookTest" />
+        <item itemvalue="JUnit.BookControllerTest" />
         <item itemvalue="JUnit.BookServiceTest" />
         <item itemvalue="JUnit.BookServiceTest.saveBookTest" />
-        <item itemvalue="JUnit.BookControllerTest" />
         <item itemvalue="Application.com.nosliejnav.libraryapi.LibraryApiApplication" />
-        <item itemvalue="JUnit.BookControllerTest.createBookTest" />
       </list>
     </recent_temporary>
   </component>
@@ -336,7 +363,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733751981524</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Criando a implementação do BookService">
+      <option name="closed" value="true" />
+      <created>1733783503818</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1733783503818</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -353,6 +388,7 @@
     <MESSAGE value="Refatorando o teste para receber json via requisição." />
     <MESSAGE value="Adicionando o ModelMapper ao projeto" />
     <MESSAGE value="Criando o teste da camada de serviço" />
-    <option name="LAST_COMMIT_MESSAGE" value="Criando o teste da camada de serviço" />
+    <MESSAGE value="Criando a implementação do BookService" />
+    <option name="LAST_COMMIT_MESSAGE" value="Criando a implementação do BookService" />
   </component>
 </project>
