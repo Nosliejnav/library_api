@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c396700c-fba7-48bd-a0d0-54ceaaf6df15" name="Changes" comment="LibraryApiApplication &quot;Spring Initializr&quot;">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/nosliejnav/libraryapi/api/resource/BookControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HELP.md" beforeDir="false" afterPath="$PROJECT_DIR$/HELP.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nosliejnav/library_api/LibraryApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/LibraryApiApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/nosliejnav/library_api/LibraryApiApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nosliejnav/libraryapi/LibraryApiApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/library_api/LibraryApiApplication.class" beforeDir="false" />
-    </list>
+    <list default="true" id="c396700c-fba7-48bd-a0d0-54ceaaf6df15" name="Changes" comment="Criando classes de testes para testar Rest Controller" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -257,17 +251,34 @@
       <option name="project" value="LOCAL" />
       <updated>1733621184639</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="test">
+      <option name="closed" value="true" />
+      <created>1733706027171</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1733706027171</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Criando classes de testes para testar Rest Controller">
+      <option name="closed" value="true" />
+      <created>1733706039085</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1733706039085</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="test" />
     <MESSAGE value="PrimeiroProjetoRest" />
     <MESSAGE value="PrimeiroProjetoRest do zero" />
     <MESSAGE value="basico para criação de API Rest na pratica" />
     <MESSAGE value="BAse para criação de API Rest na pratica 01" />
     <MESSAGE value="BAse para criação de API Rest na pratica 02" />
     <MESSAGE value="LibraryApiApplication &quot;Spring Initializr&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="LibraryApiApplication &quot;Spring Initializr&quot;" />
+    <MESSAGE value="test" />
+    <MESSAGE value="Criando classes de testes para testar Rest Controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="Criando classes de testes para testar Rest Controller" />
   </component>
 </project>
