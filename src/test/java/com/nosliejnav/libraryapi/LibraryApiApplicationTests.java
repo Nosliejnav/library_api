@@ -1,4 +1,4 @@
-package com.nosliejnav.library_api;
+package com.nosliejnav.libraryapi;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

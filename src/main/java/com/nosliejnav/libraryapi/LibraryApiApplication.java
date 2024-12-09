@@ -1,4 +1,4 @@
-package com.nosliejnav.library_api;
+package com.nosliejnav.libraryapi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
