@@ -8,6 +8,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.BDDMockito;
+import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -15,6 +16,7 @@ import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.http.MediaType;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.bean.override.mockito.MockitoBean;
+import org.springframework.test.context.bean.override.mockito.MockitoSpyBean;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockHttpServletRequestBuilder;
@@ -22,6 +24,7 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 //Com a versão antiga//@RunWith(SpringRunner.class)
 @ExtendWith(SpringExtension.class)
@@ -35,7 +38,7 @@ public class BookControllerTest {
     @Autowired
     MockMvc mvc;
 
-    @MockitoBean
+    @MockitoSpyBean
     BookService bookService;
 
     @Test
@@ -55,12 +58,12 @@ public class BookControllerTest {
                 .content(json);
 
         mvc
-                .perform(request)
-                .andExpect(MockMvcResultMatchers.status().isCreated())
-                .andExpect(jsonPath("id").isNotEmpty())
-                .andExpect(jsonPath(" title").value(dto.getTitle()))
-                .andExpect(jsonPath(" author").value(dto.getAuthor()))
-                .andExpect(jsonPath(" isbn").value(dto.getIsbn()))
+                    .perform(request)
+                    .andExpect(status().isCreated())
+                    .andExpect(jsonPath("id").value(10l))
+                    .andExpect(jsonPath(" title").value(dto.getTitle()))
+                    .andExpect(jsonPath(" author").value(dto.getAuthor()))
+                    .andExpect(jsonPath(" isbn").value(dto.getIsbn()))
 
         ;
     }
