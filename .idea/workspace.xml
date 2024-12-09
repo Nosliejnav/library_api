@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c396700c-fba7-48bd-a0d0-54ceaaf6df15" name="Changes" comment="Controller, DTO e Lombok project">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="c396700c-fba7-48bd-a0d0-54ceaaf6df15" name="Changes" comment="Refatorando o teste para receber json via requisição.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/model/entity/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/service/BookService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/api/dto/BookDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/api/dto/BookDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/api/resource/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/api/resource/BookController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/nosliejnav/libraryapi/api/resource/BookControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nosliejnav/libraryapi/api/resource/BookControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nosliejnav/libraryapi/api/resource/BookControllerTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +85,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BookControllerTest.createBookTest">
+  <component name="RunManager" selected="JUnit.BookControllerTest">
     <configuration name="LibraryApiApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.nosliejnav.library_api.LibraryApiApplication" />
       <module name="library-api" />
@@ -166,8 +169,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BookControllerTest.createBookTest" />
         <item itemvalue="JUnit.BookControllerTest" />
+        <item itemvalue="JUnit.BookControllerTest.createBookTest" />
         <item itemvalue="Application.com.nosliejnav.libraryapi.LibraryApiApplication" />
         <item itemvalue="JUnit.LibraryApiApplicationTests" />
         <item itemvalue="Application.LibraryApiApplication" />
@@ -303,7 +306,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733709312925</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Refatorando o teste para receber json via requisição.">
+      <option name="closed" value="true" />
+      <created>1733710235042</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1733710235042</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -317,6 +328,7 @@
     <MESSAGE value="Criando classes de testes para testar Rest Controller" />
     <MESSAGE value="Aprendendo a desenhar uma requisição utilizando TDD" />
     <MESSAGE value="Controller, DTO e Lombok project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Controller, DTO e Lombok project" />
+    <MESSAGE value="Refatorando o teste para receber json via requisição." />
+    <option name="LAST_COMMIT_MESSAGE" value="Refatorando o teste para receber json via requisição." />
   </component>
 </project>
