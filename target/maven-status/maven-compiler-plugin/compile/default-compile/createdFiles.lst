@@ -1,6 +1,7 @@
 com\nosliejnav\libraryapi\model\entity\Book$BookBuilder.class
 com\nosliejnav\libraryapi\service\BookService.class
 com\nosliejnav\libraryapi\api\dto\BookDTO.class
+com\nosliejnav\libraryapi\api\exception\BusinessException.class
 com\nosliejnav\libraryapi\api\resource\BookController.class
 com\nosliejnav\libraryapi\model\repository\BookRepository.class
 com\nosliejnav\libraryapi\LibraryApiApplication.class

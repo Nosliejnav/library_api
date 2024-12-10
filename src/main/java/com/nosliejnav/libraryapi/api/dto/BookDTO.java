@@ -22,6 +22,4 @@ public class BookDTO {
 
     @NotEmpty
     private String isbn;
-
-
 }

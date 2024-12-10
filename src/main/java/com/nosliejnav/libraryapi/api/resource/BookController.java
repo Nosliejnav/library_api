@@ -2,6 +2,7 @@ package com.nosliejnav.libraryapi.api.resource;
 
 import com.nosliejnav.libraryapi.api.dto.BookDTO;
 import com.nosliejnav.libraryapi.api.exception.ApiErros;
+import com.nosliejnav.libraryapi.api.exception.BusinessException;
 import com.nosliejnav.libraryapi.model.entity.Book;
 import com.nosliejnav.libraryapi.service.BookService;
 import jakarta.validation.Valid;
@@ -36,6 +37,11 @@ public class BookController {
     public ApiErros handleValidationExceptions(MethodArgumentNotValidException ex) {
         BindingResult bindingResult = ex.getBindingResult();
         return new ApiErros(bindingResult);
+    }
 
+    @ExceptionHandler(BusinessException.class)
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    public ApiErros handleBusinessException(BusinessException ex){
+        return new ApiErros(ex);
     }
 }
