@@ -1,3 +1,4 @@
 com\nosliejnav\libraryapi\LibraryApiApplicationTests.class
 com\nosliejnav\libraryapi\api\resource\BookControllerTest.class
+com\nosliejnav\libraryapi\model\repository\BookRepositoryTest.class
 com\nosliejnav\libraryapi\service\BookServiceTest.class
