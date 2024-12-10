@@ -1,6 +1,6 @@
 package com.nosliejnav.libraryapi.api.resource;
 
-import com.nosliejnav.libraryapi.api.dto.BookDTO;
+import com.nosliejnav.libraryapi.api.dto    .BookDTO;
 import com.nosliejnav.libraryapi.api.exception.ApiErros;
 import com.nosliejnav.libraryapi.api.exception.BusinessException;
 import com.nosliejnav.libraryapi.model.entity.Book;
