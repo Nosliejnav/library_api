@@ -1,5 +1,6 @@
 package com.nosliejnav.libraryapi.model.repository;
 
+import com.nosliejnav.libraryapi.model.entity.Book;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -16,15 +17,30 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 @DataJpaTest
 public class BookRepositoryTest {
 
-    @Autowired
-    TestEntityManager entityManager;
+        @Autowired
+        TestEntityManager entityManager;
 
-    @Autowired
-    BookRepository bookRepository;
+        @Autowired
+        BookRepository bookRepository;
+
+        @Test
+        @DisplayName("Deve retornar verdadeiro quando existir um livro na base com o isbn informado.")
+        public void returnTrueWhenIsbnExists(){
+            //cenario
+            String isbn = "123";
+            Book book = Book.builder().title("Aventuras").author("Fulano").isbn(isbn).build();
+            entityManager.persist(book);
+
+            //execucao
+            boolean exists = bookRepository.existsByIsbn(isbn);
+
+            //verificacao
+            assertThat(exists).isTrue();
+        }
 
     @Test
-    @DisplayName("Deve retornar verdadeiro quando existir um livro na base com o isbn informado.")
-    public void returnTrueWhenIsbnExists(){
+    @DisplayName("Deve retornar false verdadeiro quando não existir um livro na base com o isbn informado.")
+    public void returnFalseWhenIsbnDoesntExist(){
         //cenario
         String isbn = "123";
 
@@ -32,6 +48,6 @@ public class BookRepositoryTest {
         boolean exists = bookRepository.existsByIsbn(isbn);
 
         //verificacao
-        assertThat(exists).isTrue();
+        assertThat(exists).isFalse();
     }
-}
+    }
