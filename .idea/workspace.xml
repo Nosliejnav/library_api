@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c396700c-fba7-48bd-a0d0-54ceaaf6df15" name="Changes" comment="Lidando com erros de regra de negocio">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/api/resource/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/api/resource/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/model/repository/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/model/repository/BookRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/service/impl/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/service/impl/BookServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/nosliejnav/libraryapi/service/BookServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nosliejnav/libraryapi/service/BookServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/library-api-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/library-api-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/library-api-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/library-api-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
-    </list>
+    <list default="true" id="c396700c-fba7-48bd-a0d0-54ceaaf6df15" name="Changes" comment="Testando fluxo de exceções na camada de serviço" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,29 +50,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Application.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LibraryApiApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.PrimeiroProjetoRestApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.com.nosliejnav.libraryapi.LibraryApiApplication.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BookControllerTest.createBookTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BookControllerTest.createInvalidBookTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BookControllerTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BookServiceTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BookServiceTest.saveBookTest.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.library-api [clean,install].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/DevApps/+/IntelliJ_Project/library_api/src/test/java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Application.executor": "Run",
+    "Application.LibraryApiApplication.executor": "Run",
+    "Application.PrimeiroProjetoRestApplication.executor": "Run",
+    "Application.com.nosliejnav.libraryapi.LibraryApiApplication.executor": "Run",
+    "JUnit.BookControllerTest.createBookTest.executor": "Run",
+    "JUnit.BookControllerTest.createInvalidBookTest.executor": "Run",
+    "JUnit.BookControllerTest.executor": "Run",
+    "JUnit.BookServiceTest.executor": "Run",
+    "JUnit.BookServiceTest.saveBookTest.executor": "Run",
+    "JUnit.BookServiceTest.shouldNotSaveABookWithDuplicatedIESN.executor": "Run",
+    "Maven.library-api [clean,install].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/DevApps/+/IntelliJ_Project/library_api/src/test/java",
+    "project.structure.last.edited": "Global Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.nosliejnav.libraryapi.exception" />
@@ -371,7 +364,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733790798581</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Testando fluxo de exceções na camada de serviço">
+      <option name="closed" value="true" />
+      <created>1733855888082</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1733855888082</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -391,6 +392,7 @@
     <MESSAGE value="Criando a implementação do BookService" />
     <MESSAGE value="Utilizando os recursos Bean Validation e Exception Handler" />
     <MESSAGE value="Lidando com erros de regra de negocio" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lidando com erros de regra de negocio" />
+    <MESSAGE value="Testando fluxo de exceções na camada de serviço" />
+    <option name="LAST_COMMIT_MESSAGE" value="Testando fluxo de exceções na camada de serviço" />
   </component>
 </project>
