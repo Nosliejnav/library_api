@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c396700c-fba7-48bd-a0d0-54ceaaf6df15" name="Changes" comment="Testando fluxo de exceções na camada de serviço" />
+    <list default="true" id="c396700c-fba7-48bd-a0d0-54ceaaf6df15" name="Changes" comment="Testando fluxo de exceções na camada de serviço">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/nosliejnav/libraryapi/model/repository/BookRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nosliejnav/libraryapi/service/BookServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nosliejnav/libraryapi/service/BookServiceTest.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,6 +63,7 @@
     "JUnit.BookControllerTest.createBookTest.executor": "Run",
     "JUnit.BookControllerTest.createInvalidBookTest.executor": "Run",
     "JUnit.BookControllerTest.executor": "Run",
+    "JUnit.BookRepositoryTest.returnTrueWhenIsbnExists.executor": "Run",
     "JUnit.BookServiceTest.executor": "Run",
     "JUnit.BookServiceTest.saveBookTest.executor": "Run",
     "JUnit.BookServiceTest.shouldNotSaveABookWithDuplicatedIESN.executor": "Run",
@@ -89,7 +94,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BookServiceTest.shouldNotSaveABookWithDuplicatedIESN">
+  <component name="RunManager" selected="JUnit.BookRepositoryTest.returnTrueWhenIsbnExists">
     <configuration name="BookControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="library-api" />
       <extension name="coverage">
@@ -105,17 +110,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookControllerTest.createInvalidBookTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BookRepositoryTest.returnTrueWhenIsbnExists" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="library-api" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.nosliejnav.libraryapi.api.resource.*" />
+          <option name="PATTERN" value="com.nosliejnav.libraryapi.model.repository.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.nosliejnav.libraryapi.api.resource" />
-      <option name="MAIN_CLASS_NAME" value="com.nosliejnav.libraryapi.api.resource.BookControllerTest" />
-      <option name="METHOD_NAME" value="createInvalidBookTest" />
+      <option name="PACKAGE_NAME" value="com.nosliejnav.libraryapi.model.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.nosliejnav.libraryapi.model.repository.BookRepositoryTest" />
+      <option name="METHOD_NAME" value="returnTrueWhenIsbnExists" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -179,11 +184,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BookRepositoryTest.returnTrueWhenIsbnExists" />
         <item itemvalue="JUnit.BookServiceTest.shouldNotSaveABookWithDuplicatedIESN" />
         <item itemvalue="JUnit.BookServiceTest.saveBookTest" />
         <item itemvalue="JUnit.BookServiceTest" />
         <item itemvalue="JUnit.BookControllerTest" />
-        <item itemvalue="JUnit.BookControllerTest.createInvalidBookTest" />
       </list>
     </recent_temporary>
   </component>
@@ -372,7 +377,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733855888082</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Testando fluxo de exceções na camada de serviço">
+      <option name="closed" value="true" />
+      <created>1733856706142</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1733856706142</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
