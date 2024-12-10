@@ -4,13 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c396700c-fba7-48bd-a0d0-54ceaaf6df15" name="Changes" comment="Criando o primeiro teste de integração com a base de dados">
+    <list default="true" id="c396700c-fba7-48bd-a0d0-54ceaaf6df15" name="Changes" comment="Verifica a existencia de um livro pelo ISBN na base de dados">
+      <change afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/nosliejnav/libraryapi/model/repository/BookRepositoryTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/model/entity/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/model/entity/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/nosliejnav/libraryapi/model/repository/BookRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nosliejnav/libraryapi/model/repository/BookRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/model/entity/Book$BookBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/model/entity/Book$BookBuilder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/model/entity/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/model/entity/Book.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/library-api-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/library-api-0.0.1-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/library-api-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/library-api-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -397,7 +402,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733860423601</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Verifica a existencia de um livro pelo ISBN na base de dados">
+      <option name="closed" value="true" />
+      <created>1733874052771</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1733874052771</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -419,6 +432,7 @@
     <MESSAGE value="Lidando com erros de regra de negocio" />
     <MESSAGE value="Testando fluxo de exceções na camada de serviço" />
     <MESSAGE value="Criando o primeiro teste de integração com a base de dados" />
-    <option name="LAST_COMMIT_MESSAGE" value="Criando o primeiro teste de integração com a base de dados" />
+    <MESSAGE value="Verifica a existencia de um livro pelo ISBN na base de dados" />
+    <option name="LAST_COMMIT_MESSAGE" value="Verifica a existencia de um livro pelo ISBN na base de dados" />
   </component>
 </project>
