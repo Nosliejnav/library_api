@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c396700c-fba7-48bd-a0d0-54ceaaf6df15" name="Changes" comment="Criando a funcionalidade de obter as informações de um livro">
+    <list default="true" id="c396700c-fba7-48bd-a0d0-54ceaaf6df15" name="Changes" comment="Implementando o cenario onde o livro não existir no servidor">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/api/resource/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/api/resource/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/service/BookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/service/impl/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/service/impl/BookServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/nosliejnav/libraryapi/api/resource/BookControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nosliejnav/libraryapi/api/resource/BookControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nosliejnav/libraryapi/api/resource/BookControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nosliejnav/libraryapi/api/resource/BookControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/library-api-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/library-api-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/library-api-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/library-api-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +37,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/Nosliejnav/library_api.git&quot;,
-    &quot;accountId&quot;: &quot;a43ebec7-cd12-42d0-8e94-d3b471d9d2f3&quot;
+    &quot;accountId&quot;: &quot;9c043dd5-3c68-43f7-9866-4d748013277d&quot;
   }
 }</component>
   <component name="MavenImportPreferences">
@@ -64,6 +67,7 @@
     "JUnit.BookControllerTest.bookNotFoundTest.executor": "Run",
     "JUnit.BookControllerTest.createBookTest.executor": "Run",
     "JUnit.BookControllerTest.createInvalidBookTest.executor": "Run",
+    "JUnit.BookControllerTest.deleteBookTest.executor": "Run",
     "JUnit.BookControllerTest.executor": "Run",
     "JUnit.BookControllerTest.getBookDetailsTest.executor": "Run",
     "JUnit.BookRepositoryTest.executor": "Run",
@@ -114,7 +118,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookControllerTest.bookNotFoundTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BookControllerTest.deleteBookTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="library-api" />
       <extension name="coverage">
         <pattern>
@@ -124,7 +128,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.nosliejnav.libraryapi.api.resource" />
       <option name="MAIN_CLASS_NAME" value="com.nosliejnav.libraryapi.api.resource.BookControllerTest" />
-      <option name="METHOD_NAME" value="bookNotFoundTest" />
+      <option name="METHOD_NAME" value="deleteBookTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -189,10 +193,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.BookControllerTest" />
-        <item itemvalue="JUnit.BookControllerTest.bookNotFoundTest" />
-        <item itemvalue="JUnit.BookControllerTest.getBookDetailsTest" />
-        <item itemvalue="JUnit.BookRepositoryTest" />
+        <item itemvalue="JUnit.BookControllerTest.deleteBookTest" />
         <item itemvalue="JUnit.BookRepositoryTest.returnTrueWhenIsbnExists" />
+        <item itemvalue="JUnit.BookRepositoryTest" />
+        <item itemvalue="JUnit.BookControllerTest.getBookDetailsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -437,7 +441,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733877927384</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Implementando o cenario onde o livro não existir no servidor">
+      <option name="closed" value="true" />
+      <created>1733878845349</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1733878845349</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -461,6 +473,7 @@
     <MESSAGE value="Criando o primeiro teste de integração com a base de dados" />
     <MESSAGE value="Verifica a existencia de um livro pelo ISBN na base de dados" />
     <MESSAGE value="Criando a funcionalidade de obter as informações de um livro" />
-    <option name="LAST_COMMIT_MESSAGE" value="Criando a funcionalidade de obter as informações de um livro" />
+    <MESSAGE value="Implementando o cenario onde o livro não existir no servidor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementando o cenario onde o livro não existir no servidor" />
   </component>
 </project>
