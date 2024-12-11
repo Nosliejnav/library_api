@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c396700c-fba7-48bd-a0d0-54ceaaf6df15" name="Changes" comment="Desafio dos metodos delete e update">
+    <list default="true" id="c396700c-fba7-48bd-a0d0-54ceaaf6df15" name="Changes" comment="Desafio delete - implementando o teste de deleção">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/nosliejnav/libraryapi/service/BookServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nosliejnav/libraryapi/service/BookServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/service/impl/BookServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/service/impl/BookServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/nosliejnav/libraryapi/service/BookServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nosliejnav/libraryapi/service/BookServiceTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -488,11 +487,18 @@
       <option name="project" value="LOCAL" />
       <updated>1733956324367</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Desafio delete - implementando o teste de deleção">
+      <option name="closed" value="true" />
+      <created>1733957701925</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1733957701925</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="PrimeiroProjetoRest do zero" />
     <MESSAGE value="basico para criação de API Rest na pratica" />
     <MESSAGE value="BAse para criação de API Rest na pratica 01" />
     <MESSAGE value="BAse para criação de API Rest na pratica 02" />
@@ -517,6 +523,7 @@
     <MESSAGE value="Teste unitario de obter livro por Id na camada de serviço" />
     <MESSAGE value="Teste de integração do metodo findById" />
     <MESSAGE value="Desafio dos metodos delete e update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Desafio dos metodos delete e update" />
+    <MESSAGE value="Desafio delete - implementando o teste de deleção" />
+    <option name="LAST_COMMIT_MESSAGE" value="Desafio delete - implementando o teste de deleção" />
   </component>
 </project>
