@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c396700c-fba7-48bd-a0d0-54ceaaf6df15" name="Changes" comment="Teste de integração do metodo findById">
+    <list default="true" id="c396700c-fba7-48bd-a0d0-54ceaaf6df15" name="Changes" comment="Desafio dos metodos delete e update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/service/impl/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/service/impl/BookServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nosliejnav/libraryapi/model/repository/BookRepositoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nosliejnav/libraryapi/model/repository/BookRepositoryTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/nosliejnav/libraryapi/service/BookServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nosliejnav/libraryapi/service/BookServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/service/impl/BookServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/service/impl/BookServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nosliejnav/libraryapi/service/BookServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nosliejnav/libraryapi/service/BookServiceTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +69,7 @@
     "JUnit.BookControllerTest.getBookDetailsTest.executor": "Run",
     "JUnit.BookRepositoryTest.executor": "Run",
     "JUnit.BookRepositoryTest.returnTrueWhenIsbnExists.executor": "Run",
+    "JUnit.BookServiceTest.deleteBookTest.executor": "Run",
     "JUnit.BookServiceTest.executor": "Run",
     "JUnit.BookServiceTest.getByIdTest.executor": "Run",
     "JUnit.BookServiceTest.saveBookTest.executor": "Run",
@@ -100,7 +102,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BookRepositoryTest">
+  <component name="RunManager" selected="JUnit.BookServiceTest">
     <configuration name="BookControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="library-api" />
       <extension name="coverage">
@@ -112,22 +114,6 @@
       <option name="PACKAGE_NAME" value="com.nosliejnav.libraryapi.api.resource" />
       <option name="MAIN_CLASS_NAME" value="com.nosliejnav.libraryapi.api.resource.BookControllerTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BookControllerTest.deleteBookTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="library-api" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.nosliejnav.libraryapi.api.resource.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.nosliejnav.libraryapi.api.resource" />
-      <option name="MAIN_CLASS_NAME" value="com.nosliejnav.libraryapi.api.resource.BookControllerTest" />
-      <option name="METHOD_NAME" value="deleteBookTest" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -162,6 +148,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BookServiceTest.deleteBookTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="library-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nosliejnav.libraryapi.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.nosliejnav.libraryapi.service" />
+      <option name="MAIN_CLASS_NAME" value="com.nosliejnav.libraryapi.service.BookServiceTest" />
+      <option name="METHOD_NAME" value="deleteBookTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BookServiceTest.getByIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="library-api" />
       <extension name="coverage">
@@ -189,11 +191,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BookRepositoryTest" />
         <item itemvalue="JUnit.BookServiceTest" />
+        <item itemvalue="JUnit.BookServiceTest.deleteBookTest" />
+        <item itemvalue="JUnit.BookRepositoryTest" />
         <item itemvalue="JUnit.BookControllerTest" />
         <item itemvalue="JUnit.BookServiceTest.getByIdTest" />
-        <item itemvalue="JUnit.BookControllerTest.deleteBookTest" />
       </list>
     </recent_temporary>
   </component>
@@ -478,11 +480,18 @@
       <option name="project" value="LOCAL" />
       <updated>1733955796919</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Desafio dos metodos delete e update">
+      <option name="closed" value="true" />
+      <created>1733956324367</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1733956324367</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="PrimeiroProjetoRest" />
     <MESSAGE value="PrimeiroProjetoRest do zero" />
     <MESSAGE value="basico para criação de API Rest na pratica" />
     <MESSAGE value="BAse para criação de API Rest na pratica 01" />
@@ -507,6 +516,7 @@
     <MESSAGE value="Atualização de livros" />
     <MESSAGE value="Teste unitario de obter livro por Id na camada de serviço" />
     <MESSAGE value="Teste de integração do metodo findById" />
-    <option name="LAST_COMMIT_MESSAGE" value="Teste de integração do metodo findById" />
+    <MESSAGE value="Desafio dos metodos delete e update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Desafio dos metodos delete e update" />
   </component>
 </project>
