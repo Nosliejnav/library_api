@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c396700c-fba7-48bd-a0d0-54ceaaf6df15" name="Changes" comment="Atualização de livros">
+    <list default="true" id="c396700c-fba7-48bd-a0d0-54ceaaf6df15" name="Changes" comment="Teste unitario de obter livro por Id na camada de serviço">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/service/impl/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/service/impl/BookServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/nosliejnav/libraryapi/api/resource/BookControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nosliejnav/libraryapi/api/resource/BookControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/nosliejnav/libraryapi/service/BookServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nosliejnav/libraryapi/service/BookServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/service/impl/BookServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/service/impl/BookServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nosliejnav/libraryapi/api/resource/BookControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nosliejnav/libraryapi/api/resource/BookControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/nosliejnav/libraryapi/model/repository/BookRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nosliejnav/libraryapi/model/repository/BookRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nosliejnav/libraryapi/service/BookServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nosliejnav/libraryapi/service/BookServiceTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +100,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BookServiceTest">
+  <component name="RunManager" selected="JUnit.BookRepositoryTest">
     <configuration name="BookControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="library-api" />
       <extension name="coverage">
@@ -192,9 +189,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BookRepositoryTest" />
         <item itemvalue="JUnit.BookServiceTest" />
         <item itemvalue="JUnit.BookControllerTest" />
-        <item itemvalue="JUnit.BookRepositoryTest" />
         <item itemvalue="JUnit.BookServiceTest.getByIdTest" />
         <item itemvalue="JUnit.BookControllerTest.deleteBookTest" />
       </list>
@@ -465,7 +462,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733950163979</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Teste unitario de obter livro por Id na camada de serviço">
+      <option name="closed" value="true" />
+      <created>1733952550257</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1733952550257</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -492,6 +497,7 @@
     <MESSAGE value="Implementando o cenario onde o livro não existir no servidor" />
     <MESSAGE value="Deleção de livros" />
     <MESSAGE value="Atualização de livros" />
-    <option name="LAST_COMMIT_MESSAGE" value="Atualização de livros" />
+    <MESSAGE value="Teste unitario de obter livro por Id na camada de serviço" />
+    <option name="LAST_COMMIT_MESSAGE" value="Teste unitario de obter livro por Id na camada de serviço" />
   </component>
 </project>
