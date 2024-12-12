@@ -4,6 +4,8 @@ import com.nosliejnav.libraryapi.api.exception.BusinessException;
 import com.nosliejnav.libraryapi.model.entity.Book;
 import com.nosliejnav.libraryapi.model.repository.BookRepository;
 import com.nosliejnav.libraryapi.service.BookService;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
@@ -45,5 +47,10 @@ public class BookServiceImpl implements BookService {
             throw new IllegalArgumentException("Book id cant be null.");
         }
         return this.bookRepository.save(book);
+    }
+
+    @Override
+    public Page<Book> find(Book filter, Pageable pageRequest) {
+        return null;
     }
 }

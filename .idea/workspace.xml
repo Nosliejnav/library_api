@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c396700c-fba7-48bd-a0d0-54ceaaf6df15" name="Changes" comment="Desafio update - implementando o teste de atualização">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/nosliejnav/libraryapi/model/repository/BookRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nosliejnav/libraryapi/model/repository/BookRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nosliejnav/libraryapi/model/repository/BookRepositoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nosliejnav/libraryapi/model/repository/BookRepositoryTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/service/BookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/nosliejnav/libraryapi/api/resource/BookControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nosliejnav/libraryapi/api/resource/BookControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +65,7 @@
     "JUnit.BookControllerTest.createInvalidBookTest.executor": "Run",
     "JUnit.BookControllerTest.deleteBookTest.executor": "Run",
     "JUnit.BookControllerTest.executor": "Run",
+    "JUnit.BookControllerTest.findBooksTest.executor": "Run",
     "JUnit.BookControllerTest.getBookDetailsTest.executor": "Run",
     "JUnit.BookRepositoryTest.deleteBookTest.executor": "Run",
     "JUnit.BookRepositoryTest.executor": "Run",
@@ -103,18 +104,19 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BookRepositoryTest.deleteBookTest">
-    <configuration name="BookRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.BookControllerTest.findBooksTest">
+    <configuration name="BookControllerTest.findBooksTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="library-api" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.nosliejnav.libraryapi.model.repository.*" />
+          <option name="PATTERN" value="com.nosliejnav.libraryapi.api.resource.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.nosliejnav.libraryapi.model.repository" />
-      <option name="MAIN_CLASS_NAME" value="com.nosliejnav.libraryapi.model.repository.BookRepositoryTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.nosliejnav.libraryapi.api.resource" />
+      <option name="MAIN_CLASS_NAME" value="com.nosliejnav.libraryapi.api.resource.BookControllerTest" />
+      <option name="METHOD_NAME" value="findBooksTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -193,11 +195,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BookControllerTest.findBooksTest" />
         <item itemvalue="JUnit.BookRepositoryTest.deleteBookTest" />
         <item itemvalue="JUnit.BookRepositoryTest.saveBookTest" />
         <item itemvalue="JUnit.BookServiceTest" />
         <item itemvalue="JUnit.BookServiceTest.deleteBookTest" />
-        <item itemvalue="JUnit.BookRepositoryTest" />
       </list>
     </recent_temporary>
   </component>
