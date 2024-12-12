@@ -5,13 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c396700c-fba7-48bd-a0d0-54ceaaf6df15" name="Changes" comment="Implementando o filtro de livros com Example do spring data">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/api/dto/BookDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/api/dto/BookDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/api/dto/LoanDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/api/resource/LoanController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/model/entity/Loan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/service/LoanService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/nosliejnav/libraryapi/api/resource/LoanControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/service/BookService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/nosliejnav/libraryapi/api/resource/BookControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nosliejnav/libraryapi/api/resource/BookControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/model/entity/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/model/entity/Book.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/library-api-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/library-api-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/library-api-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/library-api-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nosliejnav/libraryapi/api/resource/BookControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nosliejnav/libraryapi/api/resource/BookControllerTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +84,7 @@
     "JUnit.BookServiceTest.getByIdTest.executor": "Run",
     "JUnit.BookServiceTest.saveBookTest.executor": "Run",
     "JUnit.BookServiceTest.shouldNotSaveABookWithDuplicatedIESN.executor": "Run",
+    "JUnit.LoanControllerTest.createLoanTest.executor": "Run",
     "Maven.library-api [clean,install].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -99,25 +100,28 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.nosliejnav.libraryapi.service" />
+      <recent name="com.nosliejnav.libraryapi.model.entity" />
+      <recent name="com.nosliejnav.libraryapi.api.resource" />
       <recent name="com.nosliejnav.libraryapi.exception" />
       <recent name="com.nosliejnav.libraryapi.api.exception" />
-      <recent name="com.nosliejnav.libraryapi.model.repository" />
-      <recent name="com.nosliejnav.libraryapi.service.impl" />
-      <recent name="com.nosliejnav.libraryapi.api.dto" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\DevApps\+\IntelliJ_Project\library_api\src\test\java" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.nosliejnav.libraryapi.api.resource" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BookControllerTest">
+  <component name="RunManager" selected="JUnit.LoanControllerTest.createLoanTest">
     <configuration name="BookControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="library-api" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.nosliejnav.libraryapi.api.resource.*" />
+          <option name="PATTERN" value="com.nosliejnav.libraryapi.api.dto.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -128,27 +132,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookControllerTest.createBookTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="library-api" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.nosliejnav.libraryapi.api.resource.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.nosliejnav.libraryapi.api.resource" />
-      <option name="MAIN_CLASS_NAME" value="com.nosliejnav.libraryapi.api.resource.BookControllerTest" />
-      <option name="METHOD_NAME" value="createBookTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="BookControllerTest.createBookWithDuplicatedIsbn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="library-api" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.nosliejnav.libraryapi.api.resource.*" />
+          <option name="PATTERN" value="com.nosliejnav.libraryapi.api.dto.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -164,7 +152,7 @@
       <module name="library-api" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.nosliejnav.libraryapi.api.resource.*" />
+          <option name="PATTERN" value="com.nosliejnav.libraryapi.api.dto.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -176,7 +164,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookControllerTest.deleteInexistenteBookTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LoanControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="library-api" />
       <extension name="coverage">
         <pattern>
@@ -185,8 +173,23 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.nosliejnav.libraryapi.api.resource" />
-      <option name="MAIN_CLASS_NAME" value="com.nosliejnav.libraryapi.api.resource.BookControllerTest" />
-      <option name="METHOD_NAME" value="deleteInexistenteBookTest" />
+      <option name="MAIN_CLASS_NAME" value="com.nosliejnav.libraryapi.api.resource.LoanControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoanControllerTest.createLoanTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="library-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nosliejnav.libraryapi.api.resource.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.nosliejnav.libraryapi.api.resource" />
+      <option name="MAIN_CLASS_NAME" value="com.nosliejnav.libraryapi.api.resource.LoanControllerTest" />
+      <option name="METHOD_NAME" value="createLoanTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -203,11 +206,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LoanControllerTest.createLoanTest" />
+        <item itemvalue="JUnit.LoanControllerTest" />
         <item itemvalue="JUnit.BookControllerTest" />
         <item itemvalue="JUnit.BookControllerTest.createInvalidBookTest" />
         <item itemvalue="JUnit.BookControllerTest.createBookWithDuplicatedIsbn" />
-        <item itemvalue="JUnit.BookControllerTest.deleteInexistenteBookTest" />
-        <item itemvalue="JUnit.BookControllerTest.createBookTest" />
       </list>
     </recent_temporary>
   </component>
@@ -532,7 +535,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734026613156</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Implementando o filtro de livros com Example do spring data">
+      <option name="closed" value="true" />
+      <created>1734033397938</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1734033397938</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

@@ -31,7 +31,9 @@ import java.util.Optional;
 import static org.hamcrest.Matchers.hasSize;
 import static org.mockito.ArgumentMatchers.anyLong;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
+
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+
 
 //Com a versão antiga//@RunWith(SpringRunner.class)
 @ExtendWith(SpringExtension.class)
@@ -43,7 +45,7 @@ public class BookControllerTest {
     static String BOOK_API = "/api/books";
 
     @Autowired
-    MockMvc mvc;
+    MockMvc mockMvc;
 
     @MockitoBean
     BookService bookService;
@@ -65,7 +67,7 @@ public class BookControllerTest {
                 .accept(MediaType.APPLICATION_JSON)
                 .content(json);
 
-        mvc
+        mockMvc
                     .perform(request)
                     .andExpect(status().isCreated())
                     .andExpect(jsonPath("id").value(10l) )
@@ -88,7 +90,7 @@ public class BookControllerTest {
                 .content(json);
 
         //ERRO //
-        mvc.perform(request)
+        mockMvc.perform(request)
                 .andExpect( status().isBadRequest() )
                 .andExpect( jsonPath("errors", hasSize(3)) );
     }
@@ -109,7 +111,7 @@ public class BookControllerTest {
                 .accept(MediaType.APPLICATION_JSON)
                 .content(json);
 
-        mvc
+        mockMvc
                 .perform( request)
                 .andExpect(status().isBadRequest() )
                 .andExpect(jsonPath("errors", hasSize(1)) )
@@ -135,7 +137,7 @@ public class BookControllerTest {
         MockHttpServletRequestBuilder request = MockMvcRequestBuilders
                 .get(BOOK_API.concat("/" + id))
                 .accept(MediaType.APPLICATION_JSON);
-        mvc
+        mockMvc
                 .perform(request)
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("id").value(id) )
@@ -155,7 +157,7 @@ public class BookControllerTest {
                 .get(BOOK_API.concat("/" + 1))
                 .accept(MediaType.APPLICATION_JSON);
 
-        mvc
+        mockMvc
                 .perform(request)
                 .andExpect(status().isNotFound() );
     }
@@ -170,7 +172,7 @@ public class BookControllerTest {
         MockHttpServletRequestBuilder request = MockMvcRequestBuilders
                 .delete(BOOK_API.concat("/" + 1));
 
-        mvc
+        mockMvc
                 .perform( request)
                 .andExpect( status().isNoContent() );
     }
@@ -184,7 +186,7 @@ public class BookControllerTest {
         MockHttpServletRequestBuilder request = MockMvcRequestBuilders
                 .delete(BOOK_API.concat("/" + 1));
 
-        mvc
+        mockMvc
                 .perform( request)
                 .andExpect( status().isNotFound() );
     }
@@ -207,7 +209,7 @@ public class BookControllerTest {
                 .accept(MediaType.APPLICATION_JSON)
                 .contentType(MediaType.APPLICATION_JSON);
 
-        mvc
+        mockMvc
                 .perform( request)
                 .andExpect( status().isOk())
                 .andExpect(jsonPath("id").value(id) )
@@ -230,7 +232,7 @@ public class BookControllerTest {
                 .accept(MediaType.APPLICATION_JSON)
                 .contentType(MediaType.APPLICATION_JSON);
 
-        mvc
+        mockMvc
                 .perform( request)
                 .andExpect( status().isNotFound() );
     }
@@ -258,7 +260,7 @@ public class BookControllerTest {
                 .get(BOOK_API.concat(queryString))
                 .accept(MediaType.APPLICATION_JSON);
 
-        mvc
+        mockMvc
                 .perform( request)
                 .andExpect( status().isOk() )
                 .andExpect( jsonPath("content", Matchers.hasSize(1)))
