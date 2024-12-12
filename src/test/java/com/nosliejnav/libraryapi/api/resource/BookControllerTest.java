@@ -87,10 +87,10 @@ public class BookControllerTest {
                 .accept(MediaType.APPLICATION_JSON)
                 .content(json);
 
-        mvc
-                .perform(request)
-                .andExpect(status().isBadRequest() )
-                .andExpect(jsonPath("errors", hasSize(1)) );
+        //ERRO //
+        mvc.perform(request)
+                .andExpect( status().isBadRequest() )
+                .andExpect( jsonPath("errors", hasSize(3)) );
     }
 
     @Test
