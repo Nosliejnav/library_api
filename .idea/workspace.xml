@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c396700c-fba7-48bd-a0d0-54ceaaf6df15" name="Changes" comment="Desafio update - implementando o teste de atualização">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/api/resource/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/api/resource/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/service/impl/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/service/impl/BookServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/nosliejnav/libraryapi/api/resource/BookControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nosliejnav/libraryapi/api/resource/BookControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/nosliejnav/libraryapi/service/BookServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nosliejnav/libraryapi/service/BookServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/library-api-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/library-api-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/library-api-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/library-api-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nosliejnav/libraryapi/api/resource/BookControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nosliejnav/libraryapi/api/resource/BookControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nosliejnav/libraryapi/service/BookServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nosliejnav/libraryapi/service/BookServiceTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,41 +59,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Application.executor&quot;: &quot;Run&quot;,
-    &quot;Application.LibraryApiApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.PrimeiroProjetoRestApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.com.nosliejnav.libraryapi.LibraryApiApplication.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BookControllerTest.bookNotFoundTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BookControllerTest.createBookTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BookControllerTest.createInvalidBookTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BookControllerTest.deleteBookTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BookControllerTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BookControllerTest.findBooksTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BookControllerTest.getBookDetailsTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BookRepositoryTest.deleteBookTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BookRepositoryTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BookRepositoryTest.returnTrueWhenIsbnExists.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BookRepositoryTest.saveBookTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BookServiceTest.deleteBookTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BookServiceTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BookServiceTest.getByIdTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BookServiceTest.saveBookTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BookServiceTest.shouldNotSaveABookWithDuplicatedIESN.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.library-api [clean,install].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;extract.method.default.visibility&quot;: &quot;public&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/DevApps/+/IntelliJ_Project/library_api/src/test/java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Application.executor": "Run",
+    "Application.LibraryApiApplication.executor": "Run",
+    "Application.PrimeiroProjetoRestApplication.executor": "Run",
+    "Application.com.nosliejnav.libraryapi.LibraryApiApplication.executor": "Run",
+    "JUnit.BookControllerTest.bookNotFoundTest.executor": "Run",
+    "JUnit.BookControllerTest.createBookTest.executor": "Run",
+    "JUnit.BookControllerTest.createInvalidBookTest.executor": "Run",
+    "JUnit.BookControllerTest.deleteBookTest.executor": "Run",
+    "JUnit.BookControllerTest.executor": "Run",
+    "JUnit.BookControllerTest.findBooksTest.executor": "Run",
+    "JUnit.BookControllerTest.getBookDetailsTest.executor": "Run",
+    "JUnit.BookControllerTest.updateBookTest.executor": "Run",
+    "JUnit.BookRepositoryTest.deleteBookTest.executor": "Run",
+    "JUnit.BookRepositoryTest.executor": "Run",
+    "JUnit.BookRepositoryTest.returnTrueWhenIsbnExists.executor": "Run",
+    "JUnit.BookRepositoryTest.saveBookTest.executor": "Run",
+    "JUnit.BookServiceTest.deleteBookTest.executor": "Run",
+    "JUnit.BookServiceTest.executor": "Run",
+    "JUnit.BookServiceTest.findBookTest.executor": "Run",
+    "JUnit.BookServiceTest.getByIdTest.executor": "Run",
+    "JUnit.BookServiceTest.saveBookTest.executor": "Run",
+    "JUnit.BookServiceTest.shouldNotSaveABookWithDuplicatedIESN.executor": "Run",
+    "Maven.library-api [clean,install].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "extract.method.default.visibility": "public",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/DevApps/+/IntelliJ_Project/library_api/src/test/java",
+    "project.structure.last.edited": "Global Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.nosliejnav.libraryapi.exception" />
@@ -102,7 +111,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BookControllerTest">
+  <component name="RunManager" selected="JUnit.BookServiceTest">
     <configuration name="BookControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="library-api" />
       <extension name="coverage">
@@ -118,7 +127,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookControllerTest.findBooksTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BookControllerTest.updateBookTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="library-api" />
       <extension name="coverage">
         <pattern>
@@ -128,13 +137,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.nosliejnav.libraryapi.api.resource" />
       <option name="MAIN_CLASS_NAME" value="com.nosliejnav.libraryapi.api.resource.BookControllerTest" />
-      <option name="METHOD_NAME" value="findBooksTest" />
+      <option name="METHOD_NAME" value="updateBookTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookRepositoryTest.deleteBookTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BookRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="library-api" />
       <extension name="coverage">
         <pattern>
@@ -144,24 +153,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.nosliejnav.libraryapi.model.repository" />
       <option name="MAIN_CLASS_NAME" value="com.nosliejnav.libraryapi.model.repository.BookRepositoryTest" />
-      <option name="METHOD_NAME" value="deleteBookTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BookRepositoryTest.saveBookTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="library-api" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.nosliejnav.libraryapi.model.repository.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.nosliejnav.libraryapi.model.repository" />
-      <option name="MAIN_CLASS_NAME" value="com.nosliejnav.libraryapi.model.repository.BookRepositoryTest" />
-      <option name="METHOD_NAME" value="saveBookTest" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -181,6 +173,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BookServiceTest.findBookTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="library-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nosliejnav.libraryapi.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.nosliejnav.libraryapi.service" />
+      <option name="MAIN_CLASS_NAME" value="com.nosliejnav.libraryapi.service.BookServiceTest" />
+      <option name="METHOD_NAME" value="findBookTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -192,11 +200,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BookControllerTest" />
-        <item itemvalue="JUnit.BookControllerTest.findBooksTest" />
-        <item itemvalue="JUnit.BookRepositoryTest.deleteBookTest" />
-        <item itemvalue="JUnit.BookRepositoryTest.saveBookTest" />
         <item itemvalue="JUnit.BookServiceTest" />
+        <item itemvalue="JUnit.BookServiceTest.findBookTest" />
+        <item itemvalue="JUnit.BookRepositoryTest" />
+        <item itemvalue="JUnit.BookControllerTest" />
+        <item itemvalue="JUnit.BookControllerTest.updateBookTest" />
       </list>
     </recent_temporary>
   </component>

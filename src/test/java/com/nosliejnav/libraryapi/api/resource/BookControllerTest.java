@@ -67,11 +67,10 @@ public class BookControllerTest {
         mvc
                     .perform(request)
                     .andExpect(status().isCreated())
-                    .andExpect(jsonPath("id").value(10l))
-                    .andExpect(jsonPath("title").value(bookDTO.getTitle()))
-                    .andExpect(jsonPath("author").value(bookDTO.getAuthor()))
-                    .andExpect(jsonPath("isbn").value(bookDTO.getIsbn()))
-        ;
+                    .andExpect(jsonPath("id").value(10l) )
+                    .andExpect(jsonPath("title").value(bookDTO.getTitle()) )
+                    .andExpect(jsonPath("author").value(bookDTO.getAuthor()) )
+                    .andExpect(jsonPath("isbn").value(bookDTO.getIsbn()) );
     }
 
     @Test
@@ -86,9 +85,10 @@ public class BookControllerTest {
                 .accept(MediaType.APPLICATION_JSON)
                 .content(json);
 
-        mvc.perform( request)
-                .andExpect(status().isBadRequest())
-                .andExpect( jsonPath("errors", hasSize(3)));
+        mvc
+                .perform( request)
+                .andExpect(status().isBadRequest() )
+                .andExpect( jsonPath("errors", hasSize(3)) );
     }
 
     @Test
@@ -107,10 +107,11 @@ public class BookControllerTest {
                 .accept(MediaType.APPLICATION_JSON)
                 .content(json);
 
-        mvc.perform( request)
-                .andExpect(status().isBadRequest())
-                .andExpect(jsonPath("errors", hasSize(1)))
-                .andExpect(jsonPath("errors[0]").value(mensagemErro));
+        mvc
+                .perform( request)
+                .andExpect(status().isBadRequest() )
+                .andExpect(jsonPath("errors", hasSize(1)) )
+                .andExpect(jsonPath("errors[0]").value(mensagemErro) );
     }
 
     @Test
@@ -121,9 +122,9 @@ public class BookControllerTest {
 
         Book book = Book.builder()
                 .id(id)
-                .title(createNewBook().getTitle())
-                .author(createNewBook().getAuthor())
-                .isbn(createNewBook().getIsbn())
+                .title(createNewBook().getTitle() )
+                .author(createNewBook().getAuthor() )
+                .isbn(createNewBook().getIsbn() )
                 .build();
 
         BDDMockito.given(bookService.getById(id)).willReturn(Optional.of(book));
@@ -138,8 +139,7 @@ public class BookControllerTest {
                 .andExpect(jsonPath("id").value(id) )
                 .andExpect(jsonPath("title").value(createNewBook().getTitle()) )
                 .andExpect(jsonPath("author").value(createNewBook().getAuthor()) )
-                .andExpect(jsonPath("isbn").value(createNewBook().getIsbn()) )
-        ;
+                .andExpect(jsonPath("isbn").value(createNewBook().getIsbn()) );
     }
 
     @Test
@@ -156,7 +156,7 @@ public class BookControllerTest {
 
         mvc
                 .perform(request)
-                .andExpect(status().isNotFound());
+                .andExpect(status().isNotFound() );
     }
 
     @Test
@@ -169,8 +169,9 @@ public class BookControllerTest {
         MockHttpServletRequestBuilder request = MockMvcRequestBuilders
                 .delete(BOOK_API.concat("/" + 1));
 
-        mvc.perform( request)
-                .andExpect( status().isNoContent());
+        mvc
+                .perform( request)
+                .andExpect( status().isNoContent() );
     }
 
     @Test
@@ -190,9 +191,9 @@ public class BookControllerTest {
                 .content(json)
                 .accept(MediaType.APPLICATION_JSON)
                 .contentType(MediaType.APPLICATION_JSON);
-                ;
 
-        mvc.perform( request)
+        mvc
+                .perform( request)
                 .andExpect( status().isOk())
                 .andExpect(jsonPath("id").value(id) )
                 .andExpect(jsonPath("title").value(createNewBook().getTitle()) )
@@ -214,21 +215,22 @@ public class BookControllerTest {
                 .accept(MediaType.APPLICATION_JSON)
                 .contentType(MediaType.APPLICATION_JSON);
 
-        mvc.perform( request)
-                .andExpect( status().isNotFound());
+        mvc
+                .perform( request)
+                .andExpect( status().isNotFound() );
     }
 
     @Test
-    @DisplayName("Deve filtrar livros")
+    @DisplayName("Deve filtrar livros.")
     public void findBooksTest() throws Exception{
 
         Long id = 1l;
 
         Book book = Book.builder()
                 .id(id)
-                .title(createNewBook().getTitle())
-                .author(createNewBook().getAuthor())
-                .isbn(createNewBook().getIsbn())
+                .title(createNewBook().getTitle() )
+                .author(createNewBook().getAuthor() )
+                .isbn(createNewBook().getIsbn() )
                 .build();
 
         BDDMockito.given(bookService.find(Mockito.any(Book.class),Mockito.any(Pageable.class)) )
@@ -247,8 +249,7 @@ public class BookControllerTest {
                 .andExpect( jsonPath("content", Matchers.hasSize(1)))
                 .andExpect( jsonPath("totalElements").value(1) )
                 .andExpect( jsonPath("pageable.pageSize").value(100) )
-                .andExpect( jsonPath("pageable.pageNumber").value(0))
-                ;
+                .andExpect( jsonPath("pageable.pageNumber").value(0) );
     }
 
      private BookDTO createNewBook() {
