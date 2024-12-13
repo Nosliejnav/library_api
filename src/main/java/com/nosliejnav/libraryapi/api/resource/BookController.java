@@ -1,6 +1,6 @@
 package com.nosliejnav.libraryapi.api.resource;
 
-import com.nosliejnav.libraryapi.api.dto    .BookDTO;
+import com.nosliejnav.libraryapi.api.dto.BookDTO;
 import com.nosliejnav.libraryapi.api.exception.ApiErros;
 import com.nosliejnav.libraryapi.api.exception.BusinessException;
 import com.nosliejnav.libraryapi.model.entity.Book;
@@ -23,11 +23,11 @@ import java.util.stream.Collectors;
 @RequestMapping("/api/books")
 public class BookController {
 
-    private BookService bookService;
+    private BookService service;
     private ModelMapper modelMapper;
 
-    public BookController(BookService bookService, ModelMapper mapper) {
-        this.bookService = bookService;
+    public BookController(BookService service, ModelMapper mapper) {
+        this.service = service;
         this.modelMapper = mapper;
     }
 
@@ -35,13 +35,13 @@ public class BookController {
     @ResponseStatus(HttpStatus.CREATED)
     public BookDTO create(@RequestBody @Valid BookDTO dto){
         Book entity = modelMapper.map( dto, Book.class);
-        entity = bookService.save(entity);
+        entity = service.save(entity);
         return modelMapper.map(entity, BookDTO.class);
     }
 
     @GetMapping("{id}")
     public BookDTO get(@PathVariable Long id){
-        return bookService
+        return service
                 .getById(id)
                 .map(book -> modelMapper.map(book, BookDTO.class) )
                 .orElseThrow( () -> new ResponseStatusException(HttpStatus.NOT_FOUND));
@@ -50,17 +50,18 @@ public class BookController {
     @DeleteMapping("{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void delete(@PathVariable Long id){
-        Book book = bookService.getById(id).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND) );
-        bookService.delete(book);
+        Book book = service.getById(id).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND) );
+        service.delete(book);
     }
 
     @PutMapping("{id}")
-    public BookDTO update (@PathVariable Long id, BookDTO dto){
-        return bookService.getById(id).map( book -> {
+        public BookDTO update(@PathVariable Long id, @RequestBody @Valid BookDTO dto){
+
+        return service.getById(id).map(book -> {
 
             book.setAuthor(dto.getAuthor());
             book.setTitle(dto.getTitle());
-            book = bookService.update(book);
+            book = service.update(book);
             return modelMapper.map(book, BookDTO.class);
 
         }).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND) );
@@ -69,7 +70,7 @@ public class BookController {
     @GetMapping
     public Page<BookDTO> find(BookDTO bookDTO, Pageable pageRequest){
         Book filter = modelMapper.map(bookDTO, Book.class);
-        Page<Book> result = bookService.find(filter, pageRequest);
+        Page<Book> result = service.find(filter, pageRequest);
         List<BookDTO> list = result.getContent()
                 .stream()
                 .map(entity -> modelMapper.map(entity, BookDTO.class) )
@@ -78,16 +79,5 @@ public class BookController {
         return new PageImpl<BookDTO>(list, pageRequest, result.getTotalElements() );
     }
 
-    @ExceptionHandler(MethodArgumentNotValidException.class)
-    @ResponseStatus(HttpStatus.BAD_REQUEST)
-    public ApiErros handleValidationExceptions(MethodArgumentNotValidException ex) {
-        BindingResult bindingResult = ex.getBindingResult();
-        return new ApiErros(bindingResult);
-    }
 
-    @ExceptionHandler(BusinessException.class)
-    @ResponseStatus(HttpStatus.BAD_REQUEST)
-    public ApiErros handleBusinessException(BusinessException ex){
-        return new ApiErros(ex);
-    }
 }

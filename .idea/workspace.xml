@@ -5,13 +5,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c396700c-fba7-48bd-a0d0-54ceaaf6df15" name="Changes" comment="Implementando o filtro de livros com Example do spring data">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/api/dto/LoanDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/api/resource/LoanController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/model/entity/Loan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/service/LoanService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/nosliejnav/libraryapi/api/resource/LoanControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/api/ApplicationControllerAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/api/dto/BookDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/api/dto/BookDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/api/exception/ApiErros.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/api/exception/ApiErros.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/api/resource/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/api/resource/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/api/resource/LoanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/api/resource/LoanController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/service/BookService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/nosliejnav/libraryapi/api/resource/BookControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nosliejnav/libraryapi/api/resource/BookControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/nosliejnav/libraryapi/api/resource/LoanControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nosliejnav/libraryapi/api/resource/LoanControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/LibraryApiApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/api/dto/BookDTO$BookDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/api/dto/BookDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/api/dto/LoanDTO$LoanDTOBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/api/dto/LoanDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/api/exception/ApiErros.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/api/exception/BusinessException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/api/resource/BookController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/api/resource/LoanController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/model/entity/Book$BookBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/model/entity/Book.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/model/entity/Loan$LoanBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/model/entity/Loan.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/model/repository/BookRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/service/BookService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/service/LoanService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/service/impl/BookServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/library-api-0.0.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/library-api-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nosliejnav/libraryapi/LibraryApiApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nosliejnav/libraryapi/api/resource/BookControllerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nosliejnav/libraryapi/api/resource/LoanControllerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nosliejnav/libraryapi/model/repository/BookRepositoryTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nosliejnav/libraryapi/service/BookServiceTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +83,9 @@
   <component name="MavenRunner">
     <option name="skipTests" value="true" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -58,46 +94,48 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Application.executor": "Run",
-    "Application.LibraryApiApplication.executor": "Run",
-    "Application.PrimeiroProjetoRestApplication.executor": "Run",
-    "Application.com.nosliejnav.libraryapi.LibraryApiApplication.executor": "Run",
-    "JUnit.BookControllerTest.bookNotFoundTest.executor": "Run",
-    "JUnit.BookControllerTest.createBookTest.executor": "Run",
-    "JUnit.BookControllerTest.createBookWithDuplicatedIsbn.executor": "Run",
-    "JUnit.BookControllerTest.createInvalidBookTest.executor": "Run",
-    "JUnit.BookControllerTest.deleteBookTest.executor": "Run",
-    "JUnit.BookControllerTest.deleteInexistenteBookTest.executor": "Run",
-    "JUnit.BookControllerTest.executor": "Run",
-    "JUnit.BookControllerTest.findBooksTest.executor": "Run",
-    "JUnit.BookControllerTest.getBookDetailsTest.executor": "Run",
-    "JUnit.BookControllerTest.updateBookTest.executor": "Run",
-    "JUnit.BookRepositoryTest.deleteBookTest.executor": "Run",
-    "JUnit.BookRepositoryTest.executor": "Run",
-    "JUnit.BookRepositoryTest.returnTrueWhenIsbnExists.executor": "Run",
-    "JUnit.BookRepositoryTest.saveBookTest.executor": "Run",
-    "JUnit.BookServiceTest.deleteBookTest.executor": "Run",
-    "JUnit.BookServiceTest.executor": "Run",
-    "JUnit.BookServiceTest.findBookTest.executor": "Run",
-    "JUnit.BookServiceTest.getByIdTest.executor": "Run",
-    "JUnit.BookServiceTest.saveBookTest.executor": "Run",
-    "JUnit.BookServiceTest.shouldNotSaveABookWithDuplicatedIESN.executor": "Run",
-    "JUnit.LoanControllerTest.createLoanTest.executor": "Run",
-    "Maven.library-api [clean,install].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "extract.method.default.visibility": "public",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/DevApps/+/IntelliJ_Project/library_api/src/test/java",
-    "project.structure.last.edited": "Global Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Application.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LibraryApiApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PrimeiroProjetoRestApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.com.nosliejnav.libraryapi.LibraryApiApplication.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BookControllerTest.bookNotFoundTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BookControllerTest.createBookTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BookControllerTest.createBookWithDuplicatedIsbn.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BookControllerTest.createInvalidBookTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BookControllerTest.deleteBookTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BookControllerTest.deleteInexistenteBookTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BookControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BookControllerTest.findBooksTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BookControllerTest.getBookDetailsTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BookControllerTest.updateBookTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BookRepositoryTest.deleteBookTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BookRepositoryTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BookRepositoryTest.returnTrueWhenIsbnExists.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BookRepositoryTest.saveBookTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BookServiceTest.deleteBookTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BookServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BookServiceTest.findBookTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BookServiceTest.getByIdTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BookServiceTest.saveBookTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BookServiceTest.shouldNotSaveABookWithDuplicatedIESN.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LoanControllerTest.createLoanTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LoanControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LoanControllerTest.invalidIsbnCreateLoanTest.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.library-api [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;extract.method.default.visibility&quot;: &quot;public&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/DevApps/+/IntelliJ_Project/library_api/src/test/java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.nosliejnav.libraryapi.service" />
@@ -116,7 +154,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LoanControllerTest.createLoanTest">
+  <component name="RunManager" selected="JUnit.BookControllerTest">
     <configuration name="BookControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="library-api" />
       <extension name="coverage">
@@ -132,33 +170,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookControllerTest.createBookWithDuplicatedIsbn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BookControllerTest.createBookTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="library-api" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.nosliejnav.libraryapi.api.dto.*" />
+          <option name="PATTERN" value="com.nosliejnav.libraryapi.api.resource.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.nosliejnav.libraryapi.api.resource" />
       <option name="MAIN_CLASS_NAME" value="com.nosliejnav.libraryapi.api.resource.BookControllerTest" />
-      <option name="METHOD_NAME" value="createBookWithDuplicatedIsbn" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BookControllerTest.createInvalidBookTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="library-api" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.nosliejnav.libraryapi.api.dto.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.nosliejnav.libraryapi.api.resource" />
-      <option name="MAIN_CLASS_NAME" value="com.nosliejnav.libraryapi.api.resource.BookControllerTest" />
-      <option name="METHOD_NAME" value="createInvalidBookTest" />
+      <option name="METHOD_NAME" value="createBookTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -195,7 +217,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
+    <configuration name="LoanControllerTest.invalidIsbnCreateLoanTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="library-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nosliejnav.libraryapi.api.resource.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.nosliejnav.libraryapi.api.resource" />
+      <option name="MAIN_CLASS_NAME" value="com.nosliejnav.libraryapi.api.resource.LoanControllerTest" />
+      <option name="METHOD_NAME" value="invalidIsbnCreateLoanTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -206,11 +239,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LoanControllerTest.createLoanTest" />
-        <item itemvalue="JUnit.LoanControllerTest" />
         <item itemvalue="JUnit.BookControllerTest" />
-        <item itemvalue="JUnit.BookControllerTest.createInvalidBookTest" />
-        <item itemvalue="JUnit.BookControllerTest.createBookWithDuplicatedIsbn" />
+        <item itemvalue="JUnit.LoanControllerTest.invalidIsbnCreateLoanTest" />
+        <item itemvalue="JUnit.LoanControllerTest" />
+        <item itemvalue="JUnit.BookControllerTest.createBookTest" />
+        <item itemvalue="JUnit.LoanControllerTest.createLoanTest" />
       </list>
     </recent_temporary>
   </component>

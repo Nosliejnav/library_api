@@ -1,5 +1,6 @@
 package com.nosliejnav.libraryapi.api.dto;
 
+
 import jakarta.validation.constraints.NotEmpty;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -22,4 +23,6 @@ public class BookDTO {
 
     @NotEmpty
     private String isbn;
+
+
 }

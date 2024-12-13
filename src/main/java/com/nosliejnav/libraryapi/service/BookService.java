@@ -1,6 +1,5 @@
 package com.nosliejnav.libraryapi.service;
 
-
 import com.nosliejnav.libraryapi.model.entity.Book;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
