@@ -23,7 +23,7 @@ public class BookServiceImpl implements BookService {
 
     @Override
     public Book save(Book book) {
-        if(bookRepository.existsByIsbn(book.getIsbn())){
+        if (bookRepository.existsByIsbn(book.getIsbn())) {
             throw new BusinessException("Isbn já cadastrado.");
         }
         return bookRepository.save(book);
@@ -36,7 +36,7 @@ public class BookServiceImpl implements BookService {
 
     @Override
     public void delete(Book book) {
-        if (book == null || book.getId() == null){
+        if (book == null || book.getId() == null) {
             throw new IllegalArgumentException("Book id cant be null.");
         }
         this.bookRepository.delete(book);
@@ -58,13 +58,12 @@ public class BookServiceImpl implements BookService {
                         .matching()
                         .withIgnoreCase()
                         .withIgnoreNullValues()
-                        .withStringMatcher( ExampleMatcher.StringMatcher.CONTAINING )
-        );
+                        .withStringMatcher(ExampleMatcher.StringMatcher.CONTAINING));
         return bookRepository.findAll(example, pageRequest);
     }
 
     @Override
     public Optional<Book> getBookByIsbn(String isbn) {
-        return null;
+        return bookRepository.findByIsbn(isbn);
     }
 }
