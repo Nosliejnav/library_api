@@ -1,16 +1,19 @@
 package com.nosliejnav.libraryapi.api.dto;
 
-import lombok.AllArgsConstructor;
 import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
 
-@Data
 @Builder
-@NoArgsConstructor
-@AllArgsConstructor
 public class LoanDTO {
 
     private String isbn;
     private String customer;
+
+    public LoanDTO(String isbn, String customer) {
+        this.isbn = isbn;
+        this.customer = customer;
+    }
+
+    public LoanDTO() {
+    }
+
 }

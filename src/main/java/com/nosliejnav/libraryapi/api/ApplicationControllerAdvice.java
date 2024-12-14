@@ -23,13 +23,13 @@ public class ApplicationControllerAdvice {
 
     @ExceptionHandler(BusinessException.class)
     @ResponseStatus(HttpStatus.BAD_REQUEST)
-    public ApiErros handleBusinessException(BusinessException ex){
+    public ApiErros handleBusinessException(BusinessException ex) {
         return new ApiErros(ex);
     }
 
-    @ExceptionHandler(ReflectiveOperationException.class)
-    @ResponseStatus
-    public ResponseEntity handleResponseStatusException( ResponseStatusException ex){
+    @SuppressWarnings({ "rawtypes", "unchecked" })
+    @ExceptionHandler(ResponseStatusException.class)
+    public ResponseEntity handleResponseStatusException(ResponseStatusException ex) {
         return new ResponseEntity(new ApiErros(ex), ex.getStatusCode());
     }
 }
