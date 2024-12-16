@@ -1,5 +1,7 @@
 package com.nosliejnav.libraryapi.service.impl;
 
+import java.util.Optional;
+
 import com.nosliejnav.libraryapi.api.exception.BusinessException;
 import com.nosliejnav.libraryapi.model.entity.Loan;
 import com.nosliejnav.libraryapi.model.repository.LoanRepository;
@@ -20,6 +22,16 @@ public class LoanServiceImpl implements LoanService {
             throw new BusinessException("Book already loaned");
         }
         return repository.save(loan);
+    }
+
+    @Override
+    public Optional<Loan> getById(Long id) {
+        return Optional.empty();
+    }
+
+    @Override
+    public Loan update(Loan loan) {
+        return null;
     }
 
 }

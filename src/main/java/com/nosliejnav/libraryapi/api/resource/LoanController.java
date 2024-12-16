@@ -1,6 +1,7 @@
 package com.nosliejnav.libraryapi.api.resource;
 
 import com.nosliejnav.libraryapi.api.dto.LoanDTO;
+import com.nosliejnav.libraryapi.api.dto.ReturnedLoanDTO;
 import com.nosliejnav.libraryapi.model.entity.Book;
 import com.nosliejnav.libraryapi.model.entity.Loan;
 import com.nosliejnav.libraryapi.service.BookService;
@@ -37,4 +38,14 @@ public class LoanController {
         entity = service.save(entity);
         return entity.getId();
     }
+
+    @PatchMapping("{id}")
+    public void returnBook(
+            @PathVariable Long id,
+            @RequestBody ReturnedLoanDTO dto) {
+        Loan loan = service.getById(id).get();
+        loan.setReturned(dto.getReturned());
+        service.update(loan);
+    }
+
 }

@@ -10,7 +10,7 @@ import com.nosliejnav.libraryapi.model.entity.Loan;
 public interface LoanRepository extends JpaRepository<Loan, Long> {
 
     @Query(value = " select case when ( count(l.id) > 0 ) then true else false end " +
-            " from Loan l where l.book =:book and ( l.returned is null or l.returned is false ) ")
+            " from Loan l where l.book = :book and ( l.returned is null or l.returned is false ) ")
     boolean existsByBookAndNotReturned(@Param("book") Book book);
 
 }

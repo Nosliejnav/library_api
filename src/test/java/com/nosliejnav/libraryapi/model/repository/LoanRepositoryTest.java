@@ -12,7 +12,6 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 import com.nosliejnav.libraryapi.model.entity.Book;
 import com.nosliejnav.libraryapi.model.entity.Loan;
 
-import static com.nosliejnav.libraryapi.model.repository.BookRepositoryTest.createNewBook;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import java.time.LocalDate;

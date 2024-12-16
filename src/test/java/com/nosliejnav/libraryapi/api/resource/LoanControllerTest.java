@@ -1,12 +1,17 @@
 package com.nosliejnav.libraryapi.api.resource;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.nosliejnav.libraryapi.api.dto.BookDTO;
 import com.nosliejnav.libraryapi.api.dto.LoanDTO;
+import com.nosliejnav.libraryapi.api.dto.ReturnedLoanDTO;
 import com.nosliejnav.libraryapi.api.exception.BusinessException;
 import com.nosliejnav.libraryapi.model.entity.Book;
 import com.nosliejnav.libraryapi.model.entity.Loan;
 import com.nosliejnav.libraryapi.service.BookService;
 import com.nosliejnav.libraryapi.service.LoanService;
+
+import lombok.val;
+
 import org.hamcrest.Matchers;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -21,6 +26,7 @@ import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.bean.override.mockito.MockitoBean;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.RequestBuilder;
 import org.springframework.test.web.servlet.request.MockHttpServletRequestBuilder;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
@@ -114,4 +120,30 @@ public class LoanControllerTest {
                                 .andExpect(jsonPath("errors", Matchers.hasSize(1)))
                                 .andExpect(jsonPath("errors[0]").value("Book not found for passed isbn"));
         }
+
+        @Test
+        @DisplayName("Deve retornar um livro.")
+        public void returnBookTest() throws Exception {
+                // cenario { returned: true }
+                ReturnedLoanDTO dto = ReturnedLoanDTO.builder().returned(true).build();
+                Loan loan = Loan.builder().id(1l).build();
+                BDDMockito.given(loanService.getById(Mockito.anyLong()))
+                                .willReturn(Optional.of(loan));
+
+                String json = new ObjectMapper().writeValueAsString(dto);
+
+                mvc.perform(
+                                patch(LOAN_API.concat("/1"))
+                                                .accept(MediaType.APPLICATION_JSON)
+                                                .contentType(MediaType.APPLICATION_JSON)
+                                                .content(json))
+                                .andExpect(status().isOk());
+
+                Mockito.verify(loanService, Mockito.times(1)).update(loan);
+        }
+
 }
+
+// private BookDTO createNewBook() {
+// return BookDTO.builder().author("Artur").title("As
+// aventuras").isbn("001").build();
