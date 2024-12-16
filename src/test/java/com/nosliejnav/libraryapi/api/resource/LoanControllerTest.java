@@ -140,10 +140,27 @@ public class LoanControllerTest {
                                 .andExpect(status().isOk());
 
                 Mockito.verify(loanService, Mockito.times(1)).update(loan);
+
+                // private BookDTO createNewBook() {
+                // return BookDTO.builder().author("Artur").title("As
+                // aventuras").isbn("001").build();
+        }
+
+        @Test
+        @DisplayName("Deve retornar 404 quando tentar devolver um livro inexistente.")
+        public void returnInexistentBookTest() throws Exception {
+                // cenario { returned: true }
+                ReturnedLoanDTO dto = ReturnedLoanDTO.builder().returned(true).build();
+                String json = new ObjectMapper().writeValueAsString(dto);
+                BDDMockito.given(loanService.getById(Mockito.anyLong())).willReturn(Optional.empty());
+
+                mvc.perform(
+                                patch(LOAN_API.concat("/1"))
+                                                .accept(MediaType.APPLICATION_JSON)
+                                                .contentType(MediaType.APPLICATION_JSON)
+                                                .content(json))
+                                .andExpect(status().isNotFound());
+
         }
 
 }
-
-// private BookDTO createNewBook() {
-// return BookDTO.builder().author("Artur").title("As
-// aventuras").isbn("001").build();
