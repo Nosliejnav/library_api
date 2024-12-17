@@ -1,6 +1,7 @@
 package com.nosliejnav.libraryapi.service;
 
 import java.time.LocalDate;
+import java.util.Optional;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.catchThrowable;
@@ -12,6 +13,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.Mockito;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.bean.override.mockito.MockitoBean;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
@@ -88,5 +90,40 @@ public class LoanServiceTest {
 
         verify(repository, never()).save(savingLoan);
 
+    }
+
+    @Test
+    @DisplayName(" Deve obter as informações de um empréstimo pelo ID")
+    public void getLoanDetaisTest(){
+        //cenario
+        Long id = 1l;
+
+        Loan loan = createLoan();
+        loan.setId(id);
+
+        Mockito.when( repository.findById(id)).thenReturn(Optional.of(loan));
+
+        //execucao
+        Optional<Loan> result = service.getById(id);
+
+        //verificacao
+        assertThat(result.isPresent()).isTrue();
+        assertThat(result.get().getId()).isEqualTo(id);
+        assertThat(result.get().getCustomer()).isEqualTo(loan.getCustomer());
+        assertThat(result.get().getBook()).isEqualTo(loan.getBook());
+        assertThat(result.get().getLoanDate()).isEqualTo(loan.getLoanDate());
+
+        verify( repository ).findById(id);
+
+    }
+    public Loan createLoan(){
+        Book book = Book.builder().id(1l).build();
+        String customer = "Fulano";
+
+        return Loan.builder()
+                .book(book)
+                .customer(customer)
+                .loanDate(LocalDate.now())
+                .build();
     }
 }

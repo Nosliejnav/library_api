@@ -142,9 +142,6 @@ public class LoanControllerTest {
 
                 Mockito.verify(loanService, Mockito.times(1)).update(loan);
 
-                // private BookDTO createNewBook() {
-                // return BookDTO.builder().author("Artur").title("As
-                // aventuras").isbn("001").build();
         }
 
         @Test
@@ -153,6 +150,7 @@ public class LoanControllerTest {
                 // cenario { returned: true }
                 ReturnedLoanDTO dto = ReturnedLoanDTO.builder().returned(true).build();
                 String json = new ObjectMapper().writeValueAsString(dto);
+
                 BDDMockito.given(loanService.getById(Mockito.anyLong())).willReturn(Optional.empty());
 
                 mvc.perform(
