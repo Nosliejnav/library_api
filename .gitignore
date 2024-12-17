@@ -5,7 +5,7 @@
 *.log
 
 # IDE specific files
-#.idea/
+.idea/
 *.iml
 *.ipr
 *.iws
@@ -37,7 +37,7 @@
 /.settings/
 
 # IntelliJ IDEA specific files
-#/.idea/
+/.idea/
 /*.iml
 
 # Operating System files
