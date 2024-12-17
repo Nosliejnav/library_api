@@ -5,46 +5,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c396700c-fba7-48bd-a0d0-54ceaaf6df15" name="Changes" comment="Implementando o filtro de livros com Example do spring data">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/api/ApplicationControllerAdvice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/api/dto/BookDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/api/dto/BookDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/api/exception/ApiErros.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/api/exception/ApiErros.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/api/resource/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/api/resource/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/api/resource/LoanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/api/resource/LoanController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nosliejnav/libraryapi/service/BookService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/nosliejnav/libraryapi/api/resource/LoanControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nosliejnav/libraryapi/api/resource/LoanControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/LibraryApiApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/api/dto/BookDTO$BookDTOBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/api/dto/BookDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/api/dto/LoanDTO$LoanDTOBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/api/dto/LoanDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/api/exception/ApiErros.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/api/exception/BusinessException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/api/resource/BookController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/api/resource/LoanController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/model/entity/Book$BookBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/model/entity/Book.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/model/entity/Loan$LoanBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/model/entity/Loan.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/model/repository/BookRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/service/BookService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/service/LoanService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/service/impl/BookServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/library-api-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/library-api-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nosliejnav/libraryapi/LibraryApiApplicationTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nosliejnav/libraryapi/api/resource/BookControllerTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nosliejnav/libraryapi/api/resource/LoanControllerTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nosliejnav/libraryapi/model/repository/BookRepositoryTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nosliejnav/libraryapi/service/BookServiceTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/LibraryApiApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/LibraryApiApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/api/ApplicationControllerAdvice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/api/ApplicationControllerAdvice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/api/dto/BookDTO$BookDTOBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/api/dto/BookDTO$BookDTOBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/api/dto/BookDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/api/dto/BookDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/api/dto/LoanDTO$LoanDTOBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/api/dto/LoanDTO$LoanDTOBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/api/dto/LoanDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/api/dto/LoanDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/api/dto/ReturnedLoanDTO$ReturnedLoanDTOBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/api/dto/ReturnedLoanDTO$ReturnedLoanDTOBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/api/dto/ReturnedLoanDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/api/dto/ReturnedLoanDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/api/exception/ApiErros.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/api/exception/ApiErros.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/api/exception/BusinessException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/api/exception/BusinessException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/api/resource/BookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/api/resource/BookController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/api/resource/LoanController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/api/resource/LoanController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/model/entity/Book$BookBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/model/entity/Book$BookBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/model/entity/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/model/entity/Book.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/model/entity/Loan$LoanBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/model/entity/Loan$LoanBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/model/entity/Loan.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/model/entity/Loan.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/model/repository/BookRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/model/repository/BookRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/model/repository/LoanRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/model/repository/LoanRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/service/BookService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/service/BookService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/service/LoanService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/service/LoanService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/service/impl/BookServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/service/impl/BookServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/service/impl/LoanServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nosliejnav/libraryapi/service/impl/LoanServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/library-api-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/library-api-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/library-api-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/library-api-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nosliejnav/libraryapi/LibraryApiApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nosliejnav/libraryapi/LibraryApiApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nosliejnav/libraryapi/api/resource/BookControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nosliejnav/libraryapi/api/resource/BookControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nosliejnav/libraryapi/api/resource/LoanControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nosliejnav/libraryapi/api/resource/LoanControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nosliejnav/libraryapi/model/repository/BookRepositoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nosliejnav/libraryapi/model/repository/BookRepositoryTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nosliejnav/libraryapi/model/repository/LoanRepositoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nosliejnav/libraryapi/model/repository/LoanRepositoryTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nosliejnav/libraryapi/service/BookServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nosliejnav/libraryapi/service/BookServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nosliejnav/libraryapi/service/LoanServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nosliejnav/libraryapi/service/LoanServiceTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,9 +125,10 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;extract.method.default.visibility&quot;: &quot;public&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/DevApps/+/IntelliJ_Project/library_api/src/test/java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;
@@ -155,6 +153,19 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.BookControllerTest">
+    <configuration name="LibraryApiApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nosliejnav.libraryapi.LibraryApiApplication" />
+      <module name="library-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nosliejnav.libraryapi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BookControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="library-api" />
       <extension name="coverage">
@@ -170,18 +181,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BookControllerTest.createBookTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BookRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="library-api" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.nosliejnav.libraryapi.api.resource.*" />
+          <option name="PATTERN" value="com.nosliejnav.libraryapi.model.repository.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.nosliejnav.libraryapi.api.resource" />
-      <option name="MAIN_CLASS_NAME" value="com.nosliejnav.libraryapi.api.resource.BookControllerTest" />
-      <option name="METHOD_NAME" value="createBookTest" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="com.nosliejnav.libraryapi.model.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.nosliejnav.libraryapi.model.repository.BookRepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -197,22 +207,6 @@
       <option name="PACKAGE_NAME" value="com.nosliejnav.libraryapi.api.resource" />
       <option name="MAIN_CLASS_NAME" value="com.nosliejnav.libraryapi.api.resource.LoanControllerTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoanControllerTest.createLoanTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="library-api" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.nosliejnav.libraryapi.api.resource.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.nosliejnav.libraryapi.api.resource" />
-      <option name="MAIN_CLASS_NAME" value="com.nosliejnav.libraryapi.api.resource.LoanControllerTest" />
-      <option name="METHOD_NAME" value="createLoanTest" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -240,10 +234,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.BookControllerTest" />
-        <item itemvalue="JUnit.LoanControllerTest.invalidIsbnCreateLoanTest" />
+        <item itemvalue="Application.LibraryApiApplication" />
         <item itemvalue="JUnit.LoanControllerTest" />
-        <item itemvalue="JUnit.BookControllerTest.createBookTest" />
-        <item itemvalue="JUnit.LoanControllerTest.createLoanTest" />
+        <item itemvalue="JUnit.BookRepositoryTest" />
+        <item itemvalue="JUnit.LoanControllerTest.invalidIsbnCreateLoanTest" />
       </list>
     </recent_temporary>
   </component>
