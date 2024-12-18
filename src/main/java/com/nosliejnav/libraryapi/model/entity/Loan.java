@@ -1,32 +1,28 @@
 package com.nosliejnav.libraryapi.model.entity;
 
+import jakarta.persistence.*;
 import lombok.Builder;
 
 import java.time.LocalDate;
 
+import lombok.Data;
 import org.hibernate.annotations.ManyToAny;
-
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.Table;
 
 @Builder
 @Entity
 @Table
+
+@Data
 public class Loan {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(length = 100)
     private String customer;
-
+    
     @JoinColumn(name = "id_book")
     @ManyToAny
     private Book book;

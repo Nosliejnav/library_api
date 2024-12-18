@@ -9,29 +9,30 @@ import com.nosliejnav.libraryapi.service.LoanService;
 
 public class LoanServiceImpl implements LoanService {
 
-    private LoanRepository repository;
+    private LoanRepository loanRepository;
 
-    public LoanServiceImpl(LoanRepository repository) {
+    public LoanServiceImpl(LoanRepository loanRepository) {
 
-        this.repository = repository;
+        this.loanRepository = loanRepository;
     }
 
     @Override
     public Loan save(Loan loan) {
-        if (repository.existsByBookAndNotReturned(loan.getBook())) {
+        if (loanRepository.existsByBookAndNotReturned(loan.getBook())) {
             throw new BusinessException("Book already loaned");
         }
-        return repository.save(loan);
+        return loanRepository.save(loan);
     }
 
     @Override
     public Optional<Loan> getById(Long id) {
-        return repository.findById(id);
+        return loanRepository.findById(id);
     }
 
     @Override
     public Loan update(Loan loan) {
-        return null;
+
+        return loanRepository.save(loan);
     }
 
 }
