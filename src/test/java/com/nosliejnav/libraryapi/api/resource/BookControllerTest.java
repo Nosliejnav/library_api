@@ -6,7 +6,6 @@ import com.nosliejnav.libraryapi.api.exception.BusinessException;
 import com.nosliejnav.libraryapi.model.entity.Book;
 import com.nosliejnav.libraryapi.service.BookService;
 import com.nosliejnav.libraryapi.service.LoanService;
-
 import org.hamcrest.Matchers;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -33,7 +32,6 @@ import java.util.Optional;
 import static org.hamcrest.Matchers.hasSize;
 import static org.mockito.ArgumentMatchers.anyLong;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
-
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 //Com a versão antiga//@RunWith(SpringRunner.class)
@@ -201,23 +199,22 @@ public class BookControllerTest {
                 String json = new ObjectMapper().writeValueAsString(createNewBook());
 
                 Book updatingBook = Book.builder().id(1l).title("some title").author("some author").isbn("321").build();
-                BDDMockito.given(bookService.getById(id)).willReturn(Optional.of(updatingBook));
+                BDDMockito.given( bookService.getById(id) ).willReturn( Optional.of(updatingBook) );
                 Book updatedBook = Book.builder().id(id).author("Artur").title("As aventuras").isbn("321").build();
                 BDDMockito.given(bookService.update(updatingBook)).willReturn(updatedBook);
 
                 MockHttpServletRequestBuilder request = MockMvcRequestBuilders
-                                .put(BOOK_API.concat("/" + 1))
-                                .content(json)
-                                .accept(MediaType.APPLICATION_JSON)
-                                .contentType(MediaType.APPLICATION_JSON);
+                        .put(BOOK_API.concat("/" + 1))
+                        .content(json)
+                        .accept(MediaType.APPLICATION_JSON)
+                        .contentType(MediaType.APPLICATION_JSON);
 
-                mvc
-                                .perform(request)
-                                .andExpect(status().isOk())
-                                .andExpect(jsonPath("id").value(id))
-                                .andExpect(jsonPath("title").value(createNewBook().getTitle()))
-                                .andExpect(jsonPath("author").value(createNewBook().getAuthor()))
-                                .andExpect(jsonPath("isbn").value(("321")));
+                mvc.perform( request )
+                        .andExpect( status().isOk() )
+                        .andExpect( jsonPath("id").value(id) )
+                        .andExpect( jsonPath("title").value(createNewBook().getTitle()) )
+                        .andExpect( jsonPath("author").value(createNewBook().getAuthor()) )
+                        .andExpect( jsonPath("isbn").value("321") );
         }
 
         @Test

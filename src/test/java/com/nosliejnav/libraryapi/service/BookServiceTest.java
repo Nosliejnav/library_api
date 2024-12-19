@@ -178,7 +178,6 @@ public class BookServiceTest {
 
     }
 
-    @SuppressWarnings("unchecked")
     @Test
     @DisplayName("Deve filtrar livros pelas propriedades.")
     public void findBookTest() {
