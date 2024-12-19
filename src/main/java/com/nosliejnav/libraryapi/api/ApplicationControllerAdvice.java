@@ -1,7 +1,7 @@
 package com.nosliejnav.libraryapi.api;
 
 import com.nosliejnav.libraryapi.api.exception.ApiErros;
-import com.nosliejnav.libraryapi.api.exception.BusinessException;
+import com.nosliejnav.libraryapi.exception.BusinessException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;

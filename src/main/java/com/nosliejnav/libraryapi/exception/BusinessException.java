@@ -1,4 +1,4 @@
-package com.nosliejnav.libraryapi.api.exception;
+package com.nosliejnav.libraryapi.exception;
 
 public class BusinessException extends RuntimeException {
     public BusinessException(String s) {

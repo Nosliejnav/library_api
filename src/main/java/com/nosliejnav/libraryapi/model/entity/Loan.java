@@ -1,16 +1,19 @@
 package com.nosliejnav.libraryapi.model.entity;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 
 import java.time.LocalDate;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.hibernate.annotations.ManyToAny;
 
 @Builder
 @Entity
 @Table
+
 
 public class Loan {
 
@@ -82,5 +85,4 @@ public class Loan {
     public void setReturned(Boolean returned) {
         this.returned = returned;
     }
-
 }

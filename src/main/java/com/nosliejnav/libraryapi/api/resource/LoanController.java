@@ -1,23 +1,19 @@
 package com.nosliejnav.libraryapi.api.resource;
 
+import com.nosliejnav.libraryapi.model.entity.Loan.LoanBuilder;
 import com.nosliejnav.libraryapi.api.dto.BookDTO;
 import com.nosliejnav.libraryapi.api.dto.LoanDTO;
 import com.nosliejnav.libraryapi.api.dto.LoanFilterDTO;
 import com.nosliejnav.libraryapi.api.dto.ReturnedLoanDTO;
-
 import com.nosliejnav.libraryapi.model.entity.Book;
 import com.nosliejnav.libraryapi.model.entity.Loan;
 import com.nosliejnav.libraryapi.service.BookService;
 import com.nosliejnav.libraryapi.service.LoanService;
 import lombok.RequiredArgsConstructor;
-
-
 import org.modelmapper.ModelMapper;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
-import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
-
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;

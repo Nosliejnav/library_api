@@ -1,14 +1,17 @@
 package com.nosliejnav.libraryapi.model.entity;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.List;
 
 @Builder
 @Entity
 @Table
+
 public class Book {
 
     @Id
@@ -28,6 +31,7 @@ public class Book {
     @OneToMany( mappedBy = "book")
     private List<Loan> loans;
 
+
     public Book(Long id, String title, String author, String isbn, List<Loan> loans) {
         this.id = id;
         this.title = title;
@@ -35,14 +39,6 @@ public class Book {
         this.isbn = isbn;
         this.loans = loans;
     }
-
-//    public Book(Long id, String title, String author, String isbn) {
-//        this.id = id;
-//        this.title = title;
-//        this.author = author;
-//        this.isbn = isbn;
-//    }
-
 
     public Book() {
     }

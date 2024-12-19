@@ -1,6 +1,6 @@
 package com.nosliejnav.libraryapi.service.impl;
 
-import com.nosliejnav.libraryapi.api.exception.BusinessException;
+import com.nosliejnav.libraryapi.exception.BusinessException;
 import com.nosliejnav.libraryapi.model.entity.Book;
 import com.nosliejnav.libraryapi.model.repository.BookRepository;
 import com.nosliejnav.libraryapi.service.BookService;

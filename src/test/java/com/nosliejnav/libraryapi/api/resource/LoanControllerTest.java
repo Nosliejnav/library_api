@@ -1,18 +1,16 @@
 package com.nosliejnav.libraryapi.api.resource;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.nosliejnav.libraryapi.api.dto.BookDTO;
 import com.nosliejnav.libraryapi.api.dto.LoanDTO;
 import com.nosliejnav.libraryapi.api.dto.LoanFilterDTO;
 import com.nosliejnav.libraryapi.api.dto.ReturnedLoanDTO;
-import com.nosliejnav.libraryapi.api.exception.BusinessException;
+import com.nosliejnav.libraryapi.exception.BusinessException;
 import com.nosliejnav.libraryapi.model.entity.Book;
 import com.nosliejnav.libraryapi.model.entity.Loan;
 import com.nosliejnav.libraryapi.service.BookService;
 import com.nosliejnav.libraryapi.service.LoanService;
 
 import com.nosliejnav.libraryapi.service.LoanServiceTest;
-import lombok.val;
 
 import org.hamcrest.Matchers;
 import org.junit.jupiter.api.DisplayName;
@@ -23,6 +21,7 @@ import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
@@ -31,7 +30,6 @@ import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.bean.override.mockito.MockitoBean;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.web.servlet.MockMvc;
-import org.springframework.test.web.servlet.RequestBuilder;
 import org.springframework.test.web.servlet.request.MockHttpServletRequestBuilder;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
@@ -50,16 +48,16 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @WebMvcTest(controllers = LoanController.class)
 public class LoanControllerTest {
 
-        static final String LOAN_API = "/api/loans";
+        static String LOAN_API = "/api/loans";
 
         @Autowired
         MockMvc mvc;
 
         @MockitoBean
-        private BookService bookService;
+        BookService bookService;
 
         @MockitoBean
-        private LoanService loanService;
+        LoanService loanService;
 
         @Test
         @DisplayName("Deve realizar um emprestimo")

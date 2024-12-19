@@ -3,7 +3,9 @@ package com.nosliejnav.libraryapi.api.resource;
 import com.nosliejnav.libraryapi.api.dto.BookDTO;
 import com.nosliejnav.libraryapi.model.entity.Book;
 import com.nosliejnav.libraryapi.service.BookService;
+import com.nosliejnav.libraryapi.service.LoanService;
 import jakarta.validation.Valid;
+import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
@@ -17,21 +19,19 @@ import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api/books")
+@RequiredArgsConstructor
 public class BookController {
 
     private final BookService bookService;
 
     private final ModelMapper modelMapper;
 
-    public BookController(BookService bookService, ModelMapper mapper) {
-        this.bookService = bookService;
-        this.modelMapper = mapper;
-    }
+    private final LoanService loanService;
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public BookDTO create(@RequestBody @Valid BookDTO dto) {
-        Book entity = modelMapper.map(dto, Book.class);
+    public BookDTO create(@RequestBody BookDTO bookDTO) {
+        Book entity = modelMapper.map(bookDTO, Book.class);
         entity = bookService.save(entity);
         return modelMapper.map(entity, BookDTO.class);
     }
