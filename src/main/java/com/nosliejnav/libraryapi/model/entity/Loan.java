@@ -12,7 +12,6 @@ import org.hibernate.annotations.ManyToAny;
 @Entity
 @Table
 
-@Data
 public class Loan {
 
     @Id

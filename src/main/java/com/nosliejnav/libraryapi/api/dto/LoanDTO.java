@@ -1,35 +1,20 @@
 package com.nosliejnav.libraryapi.api.dto;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Builder
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class LoanDTO {
 
+    private Long id;
     private String isbn;
     private String customer;
+    private BookDTO book;
 
-    public LoanDTO(String isbn, String customer) {
-        this.isbn = isbn;
-        this.customer = customer;
-    }
-
-    public LoanDTO() {
-    }
-
-    public String getIsbn() {
-        return isbn;
-    }
-
-    public void setIsbn(String isbn) {
-        this.isbn = isbn;
-    }
-
-    public String getCustomer() {
-        return customer;
-    }
-
-    public void setCustomer(String customer) {
-        this.customer = customer;
-    }
 
 }

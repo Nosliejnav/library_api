@@ -2,10 +2,13 @@ package com.nosliejnav.libraryapi.service.impl;
 
 import java.util.Optional;
 
+import com.nosliejnav.libraryapi.api.dto.LoanFilterDTO;
 import com.nosliejnav.libraryapi.api.exception.BusinessException;
 import com.nosliejnav.libraryapi.model.entity.Loan;
 import com.nosliejnav.libraryapi.model.repository.LoanRepository;
 import com.nosliejnav.libraryapi.service.LoanService;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 
 public class LoanServiceImpl implements LoanService {
 
@@ -33,6 +36,11 @@ public class LoanServiceImpl implements LoanService {
     public Loan update(Loan loan) {
 
         return loanRepository.save(loan);
+    }
+
+    @Override
+    public Page<Loan> find(LoanFilterDTO filterDTO, Pageable pegeable) {
+        return null;
     }
 
 }

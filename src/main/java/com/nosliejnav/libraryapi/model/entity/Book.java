@@ -9,7 +9,6 @@ import java.util.List;
 @Builder
 @Entity
 @Table
-
 public class Book {
 
     @Id

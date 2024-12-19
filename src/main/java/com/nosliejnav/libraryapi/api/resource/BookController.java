@@ -19,12 +19,12 @@ import java.util.stream.Collectors;
 @RequestMapping("/api/books")
 public class BookController {
 
-    private final BookService service;
+    private final BookService bookService;
 
     private final ModelMapper modelMapper;
 
-    public BookController(BookService service, ModelMapper mapper) {
-        this.service = service;
+    public BookController(BookService bookService, ModelMapper mapper) {
+        this.bookService = bookService;
         this.modelMapper = mapper;
     }
 
@@ -32,13 +32,13 @@ public class BookController {
     @ResponseStatus(HttpStatus.CREATED)
     public BookDTO create(@RequestBody @Valid BookDTO dto) {
         Book entity = modelMapper.map(dto, Book.class);
-        entity = service.save(entity);
+        entity = bookService.save(entity);
         return modelMapper.map(entity, BookDTO.class);
     }
 
     @GetMapping("{id}")
     public BookDTO get(@PathVariable Long id) {
-        return service
+        return bookService
                 .getById(id)
                 .map(book -> modelMapper.map(book, BookDTO.class))
                 .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
@@ -47,18 +47,18 @@ public class BookController {
     @DeleteMapping("{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void delete(@PathVariable Long id) {
-        Book book = service.getById(id).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
-        service.delete(book);
+        Book book = bookService.getById(id).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
+        bookService.delete(book);
     }
 
     @PutMapping("{id}")
-    public BookDTO update(@PathVariable Long id, @RequestBody @Valid BookDTO dto) {
+    public BookDTO update(@PathVariable Long id, BookDTO dto) {
 
-        return service.getById(id).map(book -> {
+        return bookService.getById(id).map(book -> {
 
             book.setAuthor(dto.getAuthor());
             book.setTitle(dto.getTitle());
-            book = service.update(book);
+            book = bookService.update(book);
             return modelMapper.map(book, BookDTO.class);
 
         }).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
@@ -67,7 +67,7 @@ public class BookController {
     @GetMapping
     public Page<BookDTO> find(BookDTO bookDTO, Pageable pageRequest) {
         Book filter = modelMapper.map(bookDTO, Book.class);
-        Page<Book> result = service.find(filter, pageRequest);
+        Page<Book> result = bookService.find(filter, pageRequest);
         List<BookDTO> list = result.getContent()
                 .stream()
                 .map(entity -> modelMapper.map(entity, BookDTO.class))
