@@ -23,7 +23,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @RestController
-@RequestMapping("/api/loads")
+@RequestMapping("/api/loans")
 @RequiredArgsConstructor
 public class LoanController {
 

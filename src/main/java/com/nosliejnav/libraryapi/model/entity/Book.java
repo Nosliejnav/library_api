@@ -28,7 +28,7 @@ public class Book {
     @Column
     private String isbn;
 
-    @OneToMany( mappedBy = "book")
+    @OneToMany( mappedBy = "book" )
     private List<Loan> loans;
 
 
