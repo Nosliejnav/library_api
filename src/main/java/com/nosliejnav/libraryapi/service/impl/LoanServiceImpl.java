@@ -4,6 +4,7 @@ import java.util.Optional;
 
 import com.nosliejnav.libraryapi.api.dto.LoanFilterDTO;
 import com.nosliejnav.libraryapi.exception.BusinessException;
+import com.nosliejnav.libraryapi.model.entity.Book;
 import com.nosliejnav.libraryapi.model.entity.Loan;
 import com.nosliejnav.libraryapi.model.repository.LoanRepository;
 import com.nosliejnav.libraryapi.service.LoanService;
@@ -41,6 +42,11 @@ public class LoanServiceImpl implements LoanService {
     @Override
     public Page<Loan> find(LoanFilterDTO filterDTO, Pageable pageable) {
         return loanRepository.findByBookIsbnOrCustomer(filterDTO.getIsbn(), filterDTO.getCustomer(), pageable);
+    }
+
+    @Override
+    public Page<Loan> getLoansByBook(Book book, Pageable pageable) {
+        return loanRepository.findByBook(book, pageable);
     }
 
 }
